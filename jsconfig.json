@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "module": "ES6",
-    "target": "ES6",
+    "module": "es6",
+    "target": "es6",
     "jsx": "react",
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "baseUrl": "src",
-    "allowJs": true
+    "allowJs": true,
+    "incremental": true,
+    "baseUrl": "src"
   },
   "exclude": ["node_modules"],
   "include": ["src/**/*"]
