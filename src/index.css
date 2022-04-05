@@ -14,10 +14,25 @@ body {
   font-weight: 400;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+a {
+  color: #000;
+}
+
 :root {
   --header-background: #9c0b32;
-  --link-hover: #7a0021;
-  --header-font-color: #fff;
+  --hover: #7a0021;
+  --white-color: #fff;
   --submit-background: #aaa;
   --submit-hover: #777;
+  --header-height: 5rem;
+  --column-m: 2;
+  --column-s: 1;
+  --border-bottom-color: rgba(0, 0, 0, 0.2);
 }

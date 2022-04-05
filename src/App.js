@@ -1,14 +1,15 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Header from 'components/Header'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Apployout from 'Layout/Apployout'
 
 function App() {
   return (
     <>
       <Router>
-        <Routes>
-          <Header />
-        </Routes>
+        <Apployout />
+        {/* <Routes>
+          <Route path="/" element={<p>Hi</p>} />
+        </Routes> */}
       </Router>
     </>
   )

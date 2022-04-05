@@ -1,0 +1,18 @@
+.title {
+  font-weight: 500;
+  width: fit-content;
+  border-bottom: 1px solid var(--border-bottom-color);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.p {
+  max-width: 60ch;
+  min-width: 30ch;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.p a {
+  font-weight: 500;
+}

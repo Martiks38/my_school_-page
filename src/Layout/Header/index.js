@@ -1,8 +1,8 @@
-import React from 'react'
+import { Logo } from 'components/Logo'
 import Navbar from 'components/Navbar'
-import styles from './style.module.css'
-import { Logo } from 'components/Logo/index'
-import Search from 'components/Search/index'
+import Search from 'components/Search'
+import React from 'react'
+import styles from './styles.module.css'
 
 function Header() {
   return (

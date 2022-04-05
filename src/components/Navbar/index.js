@@ -6,10 +6,10 @@ const LinkBtn = styled(Link)`
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
   font-size: 1.3rem;
-  color: var(--header-font-color);
+  color: var(--white-color);
   text-decoration: none;
   &:hover {
-    background: var(--link-hover);
+    background: var(--hover);
     border-radius: 8px;
   }
 `
