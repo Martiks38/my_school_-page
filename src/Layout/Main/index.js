@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css'
 
-function Home({ children }) {
+function Main({ children }) {
   return (
     <>
       <div className={styles.fondo}>
@@ -16,4 +16,4 @@ function Home({ children }) {
   )
 }
 
-export default Home
+export default Main
