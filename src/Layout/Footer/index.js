@@ -4,14 +4,13 @@ import styles from './styles.module.css'
 import styled from 'styled-components'
 
 const SvgIcon = styled.a`
-  background-color: #fff;
-  height: 35px;
-  width: 35px;
-  border-radius: 100%;
-  flex-basis: 0 0 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 34px;
+  width: 34px;
+  background-color: #fff;
+  border-radius: 100%;
 `
 
 function Footer() {
