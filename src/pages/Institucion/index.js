@@ -1,11 +1,12 @@
 import React from 'react'
-import styles from './styles.module.css'
+import institucion from './institucion.module.css'
+import styles from 'styles.module.css'
 
 function Institucion() {
   return (
     <>
       <h1 className={styles.title}>Reseña Histórica</h1>
-      <h2 className={styles.subTitle}>
+      <h2 className={institucion.subTitle}>
         Escuela de Educación Técnico Profesional N° 477 “Combate de San Lorenzo”
       </h2>
       <p className={styles.p}>
@@ -92,6 +93,12 @@ function Institucion() {
         de satisfacer las demandas de formación e inserción en el sector
         productivo de una región en continuo crecimiento.
       </p>
+      <img
+        src="http://escuelatecnica477.com/wp-content/uploads/2020/11/resena-historica-1-1024x712.png"
+        alt="Foto de la escuela en el año 1936 y en el año 2016"
+        className={institucion.img}
+        loading="lazy"
+      />
     </>
   )
 }

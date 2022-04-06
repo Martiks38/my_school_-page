@@ -35,5 +35,6 @@ a {
   --column-m: 2;
   --column-s: 1;
   --border-bottom-color: rgba(0, 0, 0, 0.2);
-  --line-height: 1.7;
+  --line-height: 1.6;
+  --shadow: rgba(22, 22, 22, 0.4);
 }

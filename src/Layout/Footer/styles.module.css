@@ -1,6 +1,6 @@
 .socialCard {
   position: absolute;
-  top: -3rem;
+  top: -45px;
   display: flex;
   width: 9rem;
   height: 3rem;
@@ -12,14 +12,16 @@
 }
 
 .socialCard::after {
-  position: absolute;
-  z-index: -1;
   content: ' ';
+  position: absolute;
+  top: -4px;
+  left: 100px;
   height: 3.2rem;
-  width: 6rem;
-  border-top-right-radius: 100px;
+  width: 7rem;
   background-color: inherit;
-  transform: skewX(40deg) translate(6.2rem, 2px);
+  border-top-right-radius: 60px;
+  transform: skewX(45deg);
+  z-index: -1;
 }
 
 .svg {
