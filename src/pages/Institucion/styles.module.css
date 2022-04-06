@@ -1,0 +1,26 @@
+.title {
+  font-weight: 700;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 1px solid var(--border-bottom-color);
+}
+
+.subTitle {
+  display: block;
+  max-width: 60ch;
+  min-width: 30ch;
+  font-weight: 500;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40ch;
+}
+
+.p {
+  max-width: 60ch;
+  min-width: 30ch;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: var(--line-height);
+}

@@ -26,7 +26,7 @@ a {
 }
 
 :root {
-  --header-background: #9c0b32;
+  --color-principal: #9c0b32;
   --hover: #7a0021;
   --white-color: #fff;
   --submit-background: #aaa;
@@ -35,4 +35,5 @@ a {
   --column-m: 2;
   --column-s: 1;
   --border-bottom-color: rgba(0, 0, 0, 0.2);
+  --line-height: 1.7;
 }

@@ -17,8 +17,8 @@ const LinkBtn = styled(Link)`
 function Navbar() {
   return (
     <nav>
-      <LinkBtn to="#">Inicio</LinkBtn>
-      <LinkBtn to="#">Institución</LinkBtn>
+      <LinkBtn to="/">Inicio</LinkBtn>
+      <LinkBtn to="institucion">Institución</LinkBtn>
       <LinkBtn to="#">Estudiantes</LinkBtn>
     </nav>
   )

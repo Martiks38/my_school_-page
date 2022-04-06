@@ -9,8 +9,8 @@
 .p {
   max-width: 60ch;
   min-width: 30ch;
+  line-height: var(--line-height);
   margin: 0 auto;
-  line-height: 1.7;
 }
 
 .p a {

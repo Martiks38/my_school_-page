@@ -5,7 +5,7 @@
   width: 9rem;
   height: 3rem;
   border: 4px solid transparent;
-  background-color: var(--header-background);
+  background-color: var(--color-principal);
   justify-content: space-evenly;
   align-items: center;
   gap: 0.8em;
@@ -37,7 +37,7 @@
 .footer {
   position: relative;
   width: 100%;
-  background-color: var(--header-background);
+  background-color: var(--color-principal);
   color: var(--white-color);
 }
 
