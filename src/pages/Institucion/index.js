@@ -1,10 +1,14 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import institucion from './institucion.module.css'
 import styles from 'styles.module.css'
 
 function Institucion() {
   return (
     <>
+      <Helmet>
+        <title>Institución | EETP N° 477</title>
+      </Helmet>
       <h1 className={styles.title}>Reseña Histórica</h1>
       <h2 className={institucion.subTitle}>
         Escuela de Educación Técnico Profesional N° 477 “Combate de San Lorenzo”

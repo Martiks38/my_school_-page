@@ -7,6 +7,7 @@ import Home from 'pages/Home'
 import Institucion from 'pages/Institucion'
 import Cuadernillo from 'pages/Cuadernillo'
 import Tecnicaturas from 'pages/Estudiantes'
+import ErrorPage from 'pages/ErrorPage/index'
 
 function Apployout() {
   return (
@@ -14,7 +15,7 @@ function Apployout() {
       <Header />
       <Main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/institucion" element={<Institucion />} />
           <Route path="/cuadernillo-de-ingreso" element={<Cuadernillo />} />
           <Route path="/estudiantes">
@@ -22,6 +23,7 @@ function Apployout() {
             <Route path="electronica" element={<Tecnicaturas />} />
             <Route path="energias-renovables" element={<Tecnicaturas />} />
           </Route>
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Main>
       <Footer />

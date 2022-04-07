@@ -1,9 +1,13 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import styles from 'styles.module.css'
 
 function Home() {
   return (
     <>
+      <Helmet>
+        <title>Home | EETP N° 477</title>
+      </Helmet>
       <h1 className={styles.title}>
         Escuela de Educación Técnico Profesional Nº 477
       </h1>
