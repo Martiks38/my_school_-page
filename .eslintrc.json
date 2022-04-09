@@ -13,7 +13,5 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
-  "rules": {
-    "space-before-function-paren": ["always"]
-  }
+  "rules": { "react/prop-types": ["off"] }
 }

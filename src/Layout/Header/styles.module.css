@@ -1,8 +1,8 @@
 .header {
   display: flex;
-  height: 5rem;
+  height: var(--header-height);
   padding: 0.5rem 2rem;
-  background: var(--header-background);
+  background: var(--color-principal);
   justify-content: space-between;
   align-items: center;
 }
@@ -15,4 +15,11 @@
   display: flex;
   align-items: center;
   gap: 2em;
+}
+
+@media (max-width: 530px) {
+  .header {
+    position: sticky;
+    top: 0;
+  }
 }
