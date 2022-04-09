@@ -28,20 +28,22 @@ const lista = [
 function ListaCuadernillos() {
   return (
     <table className={styles.table}>
-      {lista.map((cuadernillo) => (
-        <tr key={key(cuadernillo)}>
-          <td>{cuadernillo.topic}</td>
-          <td>
-            <a
-              href={cuadernillo.link}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Ver enlace
-            </a>
-          </td>
-        </tr>
-      ))}
+      <tbody>
+        {lista.map((cuadernillo) => (
+          <tr key={key(cuadernillo)}>
+            <td>{cuadernillo.topic}</td>
+            <td>
+              <a
+                href={cuadernillo.link}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Ver enlace
+              </a>
+            </td>
+          </tr>
+        ))}
+      </tbody>
     </table>
   )
 }
