@@ -1,12 +1,11 @@
 .subTitle {
   display: block;
-  max-width: 60ch;
-  min-width: 30ch;
+  max-width: 65ch;
   font-weight: 500;
   width: fit-content;
   margin-right: auto;
   margin-left: auto;
-  width: 40ch;
+  text-align: center;
 }
 
 .img {
