@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from 'styles.module.css'
 import ListaCuadernillos from './ListaCuadernillos'
-import Helmet from 'react-helmet'
+import {Helmet} from 'react-helmet-async'
 
 function Cuadernillo() {
   return (

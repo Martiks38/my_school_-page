@@ -3,7 +3,8 @@ import getData from 'api/technicalData'
 import Lista from 'components/Lista'
 import Tabla from 'components/Tabla/index'
 import styles from 'styles.module.css'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
+
 
 function Tecnicaturas() {
   const [data, setData] = useState(undefined)

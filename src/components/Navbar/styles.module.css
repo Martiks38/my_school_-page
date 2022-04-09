@@ -3,6 +3,7 @@
   list-style: none;
   padding: 0;
   gap: 0.8em;
+  min-width: min-content;
 }
 
 .menu li:hover {
@@ -32,8 +33,18 @@
   flex-direction: column;
   list-style: none;
   top: 100%;
+  left: -83%;
 }
 
 .subMenu:hover.subMenu_left > ul {
   left: -0.52rem;
+}
+
+.panelMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-menu-icon);
+  border-radius: 10px;
+  transform: scale(0.75);
 }

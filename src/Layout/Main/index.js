@@ -6,7 +6,7 @@ function Main({ children }) {
     <>
       <div className={styles.fondo}>
         <img
-          src="https://escuelatecnica477.com/wp-content/uploads/2021/02/escu.jpeg"
+          src="escuela.webp"
           alt="Foto de la escuela"
           className={styles.img}
         />
