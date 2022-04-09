@@ -54,3 +54,7 @@ a {
 .open-menu::after {
   content: ' \25BC';
 }
+
+.back-menu {
+  z-index: -1;
+}

@@ -18,6 +18,8 @@ function Navbar() {
 
   const toggleViewMenu = () => {
     setViewMenuMovil(!viewMenuMovil)
+    const $footer = document.querySelector('#root footer')
+    $footer.classList.toggle('back-menu')
   }
 
   useEffect(() => {
@@ -32,7 +34,11 @@ function Navbar() {
 
     const pressedOutMenu = (event) => {
       const $details = document.querySelector('details[open]')
-      if (event.target === $details) setViewMenuMovil(false)
+      if (event.target === $details) {
+        const $footer = document.querySelector('#root footer')
+        setViewMenuMovil(false)
+        $footer.classList.remove('back-menu')
+      }
     }
 
     if (window.innerWidth < 520) setViewIcon(true)
