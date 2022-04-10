@@ -1,5 +1,9 @@
 import React from 'react'
+<<<<<<< HEAD
 import styles from './main.module.css'
+=======
+import styles from './styles.module.css'
+>>>>>>> dev/main
 
 function Main({ children }) {
   return (
