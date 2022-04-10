@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-<<<<<<< HEAD
 import styles from './navbar.module.css'
 import MenuMovil from 'components/MenuMovil'
-=======
-import styles from './styles.module.css'
-import MenuMovil from 'components/MenuMovil/index'
->>>>>>> dev/main
 
 const LinkBtn = styled(Link)`
   display: block;
@@ -79,14 +74,11 @@ function Navbar() {
                     Cuadernillo de ingreso
                   </LinkBtn>
                 </li>
-<<<<<<< HEAD
                 <li>
                   <LinkBtn to="/horarios-de-cursado">
                     Horarios de cursado
                   </LinkBtn>
                 </li>
-=======
->>>>>>> dev/main
                 <li
                   className={`${styles.subMenu} ${styles.subMenu_left}`}
                   tabIndex={0}

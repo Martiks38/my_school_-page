@@ -1,10 +1,6 @@
 import React from 'react'
 import key from 'weak-key'
-<<<<<<< HEAD
 import styles from './table.module.css'
-=======
-import styles from './styles.module.css'
->>>>>>> dev/main
 
 function Tabla({ data }) {
   const datos = Object.entries(data)
