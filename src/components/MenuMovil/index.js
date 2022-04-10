@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styles from './styles.module.css'
+import styles from './menuMovil.module.css'
 import styled from 'styled-components'
 
 const LinkBtn = styled(Link)`

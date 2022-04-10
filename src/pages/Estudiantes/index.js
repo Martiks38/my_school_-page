@@ -5,7 +5,6 @@ import Tabla from 'components/Tabla/index'
 import styles from 'styles.module.css'
 import { Helmet } from 'react-helmet-async'
 
-
 function Tecnicaturas() {
   const [data, setData] = useState(undefined)
   const technique = location.pathname.slice(13)
@@ -22,6 +21,10 @@ function Tecnicaturas() {
         <>
           <Helmet>
             <title>{`${data.titulo} | EETP N° 477`}</title>
+            <meta
+              name="description"
+              content="Perfil profesional, área ocupacional y espacios curriculares de los títulos ofecidos."
+            />
           </Helmet>
           <h1 className={styles.title}>{data.titulo}</h1>
           <h2>Perfil Profesional</h2>
