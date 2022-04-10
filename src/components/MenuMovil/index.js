@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styles from './styles.module.css'
+import styles from './menuMovil.module.css'
 import styled from 'styled-components'
 
 const LinkBtn = styled(Link)`
@@ -47,6 +47,7 @@ function MenuMovil() {
               <LinkBtn to="/cuadernillo-de-ingreso">
                 Cuadernillo de ingreso
               </LinkBtn>
+              <LinkBtn to="/horarios-de-cursado">Horarios de cursado</LinkBtn>
               <details>
                 <summary className={styles.seccion}>
                   <h5 className="close-menu" onClick={toggleMenu}>

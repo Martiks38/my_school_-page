@@ -8,6 +8,7 @@ function Institucion() {
     <>
       <Helmet>
         <title>Institución | EETP N° 477</title>
+        <meta name="description" content="Historia de la escuela." />
       </Helmet>
       <h1 className={styles.title}>Reseña Histórica</h1>
       <h2 className={institucion.subTitle}>

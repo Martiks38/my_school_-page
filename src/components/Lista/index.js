@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './styles.module.css'
+import styles from './list.module.css'
 
 function Lista({ data }) {
   return (

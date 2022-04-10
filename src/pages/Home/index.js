@@ -7,6 +7,10 @@ function Home() {
     <>
       <Helmet>
         <title>Home | EETP N° 477</title>
+        <meta
+          name="description"
+          content='Escuela de Educación Técnico Profesional N°477 "Combate de San Lorenzo". Avenida San Martín 3575, San Lorenzo, Santa Fe, Argentina. Ofrece títulos en: Técnico Electromecánico, Técnico Electrónico y Técnico en Energías Renovables.'
+        />
       </Helmet>
       <h1 className={styles.title}>
         Escuela de Educación Técnico Profesional Nº 477

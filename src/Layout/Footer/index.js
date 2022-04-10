@@ -1,6 +1,6 @@
 import React from 'react'
 import Svg from './Svg'
-import styles from './styles.module.css'
+import styles from './footer.module.css'
 import styled from 'styled-components'
 
 const SvgIcon = styled.a`
