@@ -1,7 +1,8 @@
 import React from 'react'
-import styles from 'styles.module.css'
-import ListaCuadernillos from './ListaCuadernillos'
 import { Helmet } from 'react-helmet-async'
+import LinkTable from 'components/LinkTable'
+import styles from 'styles.module.css'
+import { listaCuadernillos } from 'consts/listas'
 
 function Cuadernillo() {
   return (
@@ -19,7 +20,7 @@ function Cuadernillo() {
         puedan imprimirlos. También pueden encargarlos en la fotocopiadora
         dentro de la escuela.
       </p>
-      <ListaCuadernillos />
+      <LinkTable list={listaCuadernillos} />
     </>
   )
 }

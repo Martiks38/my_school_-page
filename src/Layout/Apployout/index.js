@@ -1,13 +1,14 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Footer from 'Layout/Footer'
 import Header from 'Layout/Header'
 import Main from 'Layout/Main'
-import Footer from 'Layout/Footer'
-import Home from 'pages/Home'
-import Institucion from 'pages/Institucion'
 import Cuadernillo from 'pages/Cuadernillo'
+import ErrorPage from 'pages/ErrorPage'
+import Home from 'pages/Home'
+import Horarios from 'pages/Horarios'
+import Institucion from 'pages/Institucion'
 import Tecnicaturas from 'pages/Estudiantes'
-import ErrorPage from 'pages/ErrorPage/index'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 function Apployout() {
@@ -29,6 +30,7 @@ function Apployout() {
             <Route exact path="/" element={<Home />} />
             <Route path="/institucion" element={<Institucion />} />
             <Route path="/cuadernillo-de-ingreso" element={<Cuadernillo />} />
+            <Route path="/horarios-de-cursado" element={<Horarios />} />
             <Route path="/estudiantes">
               <Route path="electromecanica" element={<Tecnicaturas />} />
               <Route path="electronica" element={<Tecnicaturas />} />

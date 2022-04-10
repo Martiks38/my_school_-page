@@ -47,6 +47,7 @@ function MenuMovil() {
               <LinkBtn to="/cuadernillo-de-ingreso">
                 Cuadernillo de ingreso
               </LinkBtn>
+              <LinkBtn to="/horarios-de-cursado">Horarios de cursado</LinkBtn>
               <details>
                 <summary className={styles.seccion}>
                   <h5 className="close-menu" onClick={toggleMenu}>

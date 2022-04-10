@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import styles from './navbar.module.css'
-import MenuMovil from 'components/MenuMovil/index'
+import MenuMovil from 'components/MenuMovil'
 
 const LinkBtn = styled(Link)`
   display: block;
@@ -72,6 +72,11 @@ function Navbar() {
                 <li>
                   <LinkBtn to="/cuadernillo-de-ingreso">
                     Cuadernillo de ingreso
+                  </LinkBtn>
+                </li>
+                <li>
+                  <LinkBtn to="/horarios-de-cursado">
+                    Horarios de cursado
                   </LinkBtn>
                 </li>
                 <li
