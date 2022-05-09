@@ -1,7 +1,7 @@
 .table {
   border-collapse: collapse;
   max-width: 60ch;
-  min-width: 30ch;
+  min-width: 20ch;
   margin-left: auto;
   margin-right: auto;
   line-height: var(--line-height);
@@ -12,7 +12,7 @@
   padding: 1em;
 }
 
-.table .table td:first-child {
+.table td:first-child {
   padding-right: 3em;
 }
 
@@ -36,4 +36,16 @@
 .table tr:nth-child(odd) a:hover {
   background-color: #888;
   border-radius: 8px;
+}
+
+@media (max-width: 28rem) {
+  .table {
+    text-align: center;
+  }
+  .table td {
+    padding: 0.5rem;
+  }
+  .table td:first-child {
+    padding-right: 0.5rem;
+  }
 }

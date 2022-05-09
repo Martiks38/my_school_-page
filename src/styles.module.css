@@ -1,6 +1,8 @@
 .title {
   margin-right: auto;
   margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   border-bottom: 1px solid var(--border-bottom-color);
   font-weight: 500;
@@ -8,7 +10,7 @@
 
 .p {
   max-width: 60ch;
-  min-width: 30ch;
+  min-width: 20ch;
   margin-left: auto;
   margin-right: auto;
   line-height: var(--line-height);
@@ -16,4 +18,17 @@
 
 .p a {
   font-weight: 600;
+}
+
+@media (max-width: 28rem) {
+  .title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .title + h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
 }
