@@ -8,6 +8,7 @@ function Main({ children }) {
         <img
           src="escuela.webp"
           alt="Foto de la escuela"
+          loading="eager"
           className={styles.img}
         />
       </div>

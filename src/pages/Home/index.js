@@ -11,6 +11,14 @@ function Home() {
           name="description"
           content='Escuela de Educación Técnico Profesional N°477 "Combate de San Lorenzo". Avenida San Martín 3575, San Lorenzo, Santa Fe, Argentina. Ofrece títulos en: Técnico Electromecánico, Técnico Electrónico y Técnico en Energías Renovables.'
         />
+
+        <meta property="og:title" content="Home | EETP N° 477" />
+        <meta
+          property="og:description"
+          content='Escuela de Educación Técnico Profesional N°477 "Combate de San Lorenzo". Avenida San Martín 3575, San Lorenzo, Santa Fe, Argentina. Ofrece títulos en: Técnico Electromecánico, Técnico Electrónico y Técnico en Energías Renovables.'
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./logo310.png" />
       </Helmet>
       <h1 className={styles.title}>
         Escuela de Educación Técnico Profesional Nº 477

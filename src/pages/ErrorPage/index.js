@@ -10,6 +10,11 @@ function ErrorPage() {
     <>
       <Helmet>
         <title>Error 404 | EETP N° 477</title>
+
+        <meta property="og:title" content="Error 404 | EETP N° 477" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./logo310.png" />
       </Helmet>
       <h1 className={errorStyles.titleWarn}>Error 404</h1>
       <p className={errorStyles.p}>
