@@ -120,7 +120,7 @@ function Navbar() {
           </button>
         </span>
       )}
-      {viewMenuMovil && <MenuMovil />}
+      {viewMenuMovil && <MenuMovil viewMenu={toggleViewMenu} />}
     </>
   )
 }

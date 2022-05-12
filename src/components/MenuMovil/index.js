@@ -1,7 +1,8 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import styles from './menuMovil.module.css'
 import styled from 'styled-components'
+import { $$ } from 'utils'
 
 const LinkBtn = styled(Link)`
   display: block;
@@ -17,18 +18,35 @@ const LinkBtn = styled(Link)`
   }
 `
 
-function MenuMovil() {
+function MenuMovil({ viewMenu }) {
+  const [route, setRoute] = useState(undefined)
+
+  const locationHook = useLocation()
+
+  useEffect(() => {
+    if (route !== locationHook.pathname && route) {
+      const details = $$('details')
+
+      Array.from(details).forEach((detail) =>
+        detail.classList.toggle('close-menu', 'open-menu')
+      )
+      viewMenu()
+    }
+  }, [locationHook, route])
+
+  useEffect(() => {
+    setRoute(locationHook.pathname)
+  }, [locationHook])
+
   const toggleMenu = (event) => {
     const target = event.target
 
-    event.target.classList.toggle('is_active')
+    target.classList.toggle('is_active')
 
     if (target.matches('.close-menu')) {
-      target.classList.add('open-menu')
-      target.classList.remove('close-menu')
-    } else if (event.target.matches('.open-menu')) {
-      target.classList.add('close-menu')
-      target.classList.remove('open-menu')
+      target.classList.toggle('open-menu', 'close-menu')
+    } else if (target.matches('.open-menu')) {
+      target.classList.toggle('close-menu', 'open-menu')
     }
   }
 
@@ -74,4 +92,4 @@ function MenuMovil() {
   )
 }
 
-export default MenuMovil
+export default React.memo(MenuMovil)

@@ -25,6 +25,17 @@ function Tecnicaturas() {
               name="description"
               content="Perfil profesional, área ocupacional y espacios curriculares de los títulos ofecidos."
             />
+
+            <meta
+              property="og:title"
+              content={`${data.titulo} | EETP N° 477`}
+            />
+            <meta
+              property="og:description"
+              content="Perfil profesional, área ocupacional y espacios curriculares de los títulos ofecidos."
+            />
+            <meta property="og:type" content="website" />
+            <meta property="og:image" content="./logo310.png" />
           </Helmet>
           <h1 className={styles.title}>{data.titulo}</h1>
           <h2>Perfil Profesional</h2>

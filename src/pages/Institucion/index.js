@@ -9,6 +9,11 @@ function Institucion() {
       <Helmet>
         <title>Institución | EETP N° 477</title>
         <meta name="description" content="Historia de la escuela." />
+
+        <meta property="og:title" content="Institución | EETP N° 477" />
+        <meta property="og:description" content="Historia de la escuela." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./logo310.png" />
       </Helmet>
       <h1 className={styles.title}>Reseña Histórica</h1>
       <h2 className={institucion.subTitle}>
