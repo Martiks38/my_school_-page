@@ -36,6 +36,7 @@ function Tecnicaturas() {
             />
             <meta property="og:type" content="website" />
             <meta property="og:image" content="./logo310.png" />
+
           </Helmet>
           <h1 className={styles.title}>{data.titulo}</h1>
           <h2>Perfil Profesional</h2>
