@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "format": "prettier --write .",
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "18.15.5",
@@ -18,5 +20,16 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "14.0.0",
+    "@vitejs/plugin-react": "3.1.0",
+    "@vitest/coverage-c8": "0.29.7",
+    "eslint-config-prettier": "8.8.0",
+    "husky": "8.0.3",
+    "jsdom": "21.1.1",
+    "lint-staged": "13.2.0",
+    "prettier": "2.8.6",
+    "vitest": "0.29.7"
   }
 }
