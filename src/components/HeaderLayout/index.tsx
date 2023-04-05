@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export function Header() {
+export function HeaderLayout() {
 	return (
 		<header className="px-10 py-2.5 bg-black">
 			<div className="flex justify-between items-center max-w-primaryContent mx-auto">
