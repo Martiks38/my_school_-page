@@ -1,13 +1,13 @@
 export const notices = [
 	{
+		date: '20/3/2023',
 		id: '1c3a',
 		title: 'Becas Provinciales 2023',
 		description:
-			'Actualmente se encuentra abierta la incripción a becas provinciales hasta el 13 de abril',
+			'Actualmente se encuentra abierta la incripción a becas provinciales hasta el 13 de abril.',
 		content: {
-			text: null,
+			text: 'Requisitos',
 			list: {
-				id: 'c52a',
 				items: [
 					{ id: 1, item: 'Ser alumnos del establecimiento' },
 					{
@@ -40,14 +40,14 @@ export const notices = [
 		}
 	},
 	{
-		id: '1c3a',
+		date: '20/3/2023',
+		id: '1c3c',
 		title: 'Becas Provinciales 2023',
 		description:
-			'Actualmente se encuentra abierta la incripción a becas provinciales hasta el 13 de abril',
+			'Actualmente se encuentra abierta la incripción a becas provinciales hasta el 13 de abril.',
 		content: {
-			text: null,
+			text: 'Requisitos',
 			list: {
-				id: 'c52a',
 				items: [
 					{ id: 1, item: 'Ser alumnos del establecimiento' },
 					{
@@ -80,14 +80,14 @@ export const notices = [
 		}
 	},
 	{
-		id: '1c3a',
+		date: '20/3/2023',
+		id: '1c3b',
 		title: 'Becas Provinciales 2023',
 		description:
-			'Actualmente se encuentra abierta la incripción a becas provinciales hasta el 13 de abril',
+			'Actualmente se encuentra abierta la incripción a becas provinciales hasta el 13 de abril.',
 		content: {
-			text: null,
+			text: 'Requisitos',
 			list: {
-				id: 'c52a',
 				items: [
 					{ id: 1, item: 'Ser alumnos del establecimiento' },
 					{
@@ -123,13 +123,18 @@ export const notices = [
 
 export const sections = [
 	{
+		id: 'b5e5',
+		section: 'Inicio',
+		subsections: []
+	},
+	{
 		id: 'abaf',
-		section: 'institucion',
+		section: 'Institucion',
 		subsections: [{ id: '70bf', name: 'Historia' }]
 	},
 	{
 		id: 'e19a',
-		section: 'tecnicaturas',
+		section: 'Tecnicaturas',
 		subsections: [
 			{ id: '7cee', name: 'Tecnicatura en Electromecánica' },
 			{ id: '2602', name: 'Tecnicatura en Electrónica' },
@@ -138,7 +143,7 @@ export const sections = [
 	},
 	{
 		id: 'f2b4',
-		section: 'estudiantes',
+		section: 'Estudiantes',
 		subsections: [
 			{ id: '3d76', name: 'Cuadernillo de ingreso' },
 			{ id: 'ca3a', name: 'Horarios de cursado' }
