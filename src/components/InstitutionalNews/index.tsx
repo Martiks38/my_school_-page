@@ -6,7 +6,7 @@ export function InstitutionalNews() {
 	return (
 		<>
 			<h2 className="w-fit">
-				<Link href="#">
+				<Link href="/novedades">
 					<span className="flex items-center gap-4 px-4 py-2 bg-black hover:bg-[#9c0b32]">
 						<span className="block text-xl font-semibold text-white ">
 							Novedades Institucionales
@@ -20,7 +20,7 @@ export function InstitutionalNews() {
 					return (
 						<Link
 							key={id}
-							href="#"
+							href={`/novedades/${title.replaceAll(' ', '-')}`}
 							className="block w-80 p-3 border border-[#0002] hover:border-[#000a]"
 						>
 							<h3 className="text-xl font-semibold">{title}</h3>
