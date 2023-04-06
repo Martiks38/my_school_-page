@@ -1,12 +1,13 @@
-import { FooterLayout } from '@/components/FooterLayout'
 import { HeaderLayout } from '@/components/HeaderLayout'
+import { FooterLayout } from '@/components/FooterLayout'
 import Head from 'next/head'
 
 interface LayoutPageProps {
+	haveHeroImage?: boolean
 	children: JSX.Element | JSX.Element[]
 }
 
-export function LayoutPage({ children }: LayoutPageProps): JSX.Element {
+export function LayoutPage({ children, haveHeroImage = false }: LayoutPageProps): JSX.Element {
 	return (
 		<>
 			<Head>
@@ -24,7 +25,11 @@ export function LayoutPage({ children }: LayoutPageProps): JSX.Element {
 				</a>
 				<HeaderLayout />
 				<div className="mt-auto">
-					<div className="flex flex-col bg-[#ededed] mt-[60vh]">
+					<div
+						className={
+							haveHeroImage ? `flex flex-col bg-[#ededed] mt-[60vh]` : 'flex flex-col bg-[#ededed]'
+						}
+					>
 						{children}
 						<FooterLayout />
 					</div>

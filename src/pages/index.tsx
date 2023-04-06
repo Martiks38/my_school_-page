@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import { InstitutionalNews } from '@components/InstitutionalNews'
 import { LayoutPage } from '@/Layout/LayoutPage'
 
@@ -20,7 +19,7 @@ export default function Home() {
 					content='Escuela de Educación Técnico Profesional N°477 "Combate de San Lorenzo". Avenida San Martín 3575, San Lorenzo, Santa Fe, Argentina. Ofrece títulos en: Técnico Electromecánico, Técnico Electrónico y Técnico en Energías Renovables.'
 				/>
 			</Head>
-			<LayoutPage>
+			<LayoutPage haveHeroImage={true}>
 				<Image
 					src="/escuela.webp"
 					alt=""
