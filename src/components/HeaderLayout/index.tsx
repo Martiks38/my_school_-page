@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { sections } from '@/const'
 
 export function HeaderLayout() {
 	return (
@@ -16,11 +17,15 @@ export function HeaderLayout() {
 				</Link>
 				<nav>
 					<ul className="flex gap-8 text-white">
-						<li>
-							<Link href="/">Inicio</Link>
-						</li>
-						<li>Institución</li>
-						<li>Estudiantes</li>
+						{sections.map(({ id, section }) => {
+							return (
+								<li key={id}>
+									<Link href={section.match(/Inicio/i) ? '/' : `/${section.toLowerCase()}`}>
+										{section}
+									</Link>
+								</li>
+							)
+						})}
 					</ul>
 				</nav>
 			</div>
