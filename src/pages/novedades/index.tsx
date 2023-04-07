@@ -7,7 +7,7 @@ export default function Novedades() {
 	return (
 		<>
 			<Head>
-				<title>Novedades | EET N° 477</title>
+				<title>Novedades | EET N°477</title>
 
 				<meta property="og:title" content="Novedad | EET N° 477" />
 			</Head>

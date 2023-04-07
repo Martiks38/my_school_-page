@@ -15,7 +15,8 @@ export default function Notice() {
 	return (
 		<>
 			<Head>
-				<title>{notice?.title} | EET N° 477</title>
+				<title>{notice?.title} | EET N°477</title>
+				<meta property="og:title" content={notice?.title} />
 				<meta name="description" content={notice?.description} />
 				<meta property="og:description" content={notice?.description} />
 			</Head>
