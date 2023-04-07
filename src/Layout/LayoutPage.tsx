@@ -1,6 +1,6 @@
-import { HeaderLayout } from '@/components/HeaderLayout'
-import { FooterLayout } from '@/components/FooterLayout'
 import Head from 'next/head'
+import { HeaderLayout } from '@components/HeaderLayout'
+import { FooterLayout } from '@components/FooterLayout'
 
 interface LayoutPageProps {
 	haveHeroImage?: boolean

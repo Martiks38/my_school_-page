@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { sections } from '@/const'
+import { sections } from '../../const'
 
 export function HeaderLayout() {
 	return (
