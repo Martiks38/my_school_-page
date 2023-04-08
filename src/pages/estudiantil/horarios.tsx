@@ -2,7 +2,6 @@ import { LayoutPage } from '@/Layout/LayoutPage'
 import { TimeBlock } from '@/components/TimeBlock'
 import { schedules } from '@/const'
 import Head from 'next/head'
-import Link from 'next/link'
 
 export default function Studiants() {
 	return (
