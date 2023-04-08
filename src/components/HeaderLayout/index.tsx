@@ -20,9 +20,11 @@ export function HeaderLayout() {
 						{sections.map(({ id, section }) => {
 							return (
 								<li key={id}>
-									<Link href={section.match(/Inicio/i) ? '/' : `/${section.toLowerCase()}`}>
-										{section}
-									</Link>
+									{section.match('Inicio') ? (
+										<Link href="/">{section}</Link>
+									) : (
+										<span>{section}</span>
+									)}
 								</li>
 							)
 						})}
