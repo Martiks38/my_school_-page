@@ -22,7 +22,7 @@ export default function Novedades() {
 										<td className="px-3 py-1.5 border border-black">
 											<Link
 												href={`/novedades/${title.replaceAll(' ', '-')}`}
-												className="hover:underline"
+												className="block w-fit hover:underline"
 											>
 												{title}
 											</Link>
