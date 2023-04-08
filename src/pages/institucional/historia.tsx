@@ -8,18 +8,16 @@ export default function HistoryInstitution() {
 	return (
 		<>
 			<Head>
-				<title>Historia | EET N° 477</title>
+				<title>Historia | EET N°477</title>
 				<meta property="og:title" content="Historia | EET N°477" />
-				<meta name="description" content="" />
-				<meta property="og:description" content="" />
 			</Head>
 			<LayoutPage>
 				<main className="flex flex-row grow w-full max-w-primaryContent mx-auto mt-8 border border-[#0005]">
 					<div className="max-w-[95ch] px-20 py-4 border-r border-[#0005]">
-						<h1 id="review" className="mb-10 text-4xl font-robotoMono font-bold">
+						<h1 id="inicio" className="mb-10 text-4xl font-robotoMono font-bold">
 							Historia
 						</h1>
-						<h2 className="mb-5 text-2xl font-robotoMono font-semibol">
+						<h2 className="mb-5 text-2xl font-robotoMono font-semibold">
 							Escuela de Educación Técnico Profesional N°477 “Combate&nbsp;de&nbsp;San&nbsp;Lorenzo”
 						</h2>
 						<div className="mb-14 [&>div:not(:last-child)]:mb-9 [&>div:not(:last-child)]:border-b-2 [&>div:not(:last-child)]:border-[#0003]">
@@ -35,7 +33,7 @@ export default function HistoryInstitution() {
 											)
 										})}
 										<a
-											href="#review"
+											href="#inicio"
 											className="block w-fit mb-2.5 ml-auto px-4 py-2 font-semibold text-lg hover:underline text-[#010061]"
 										>
 											Volver
