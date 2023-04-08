@@ -3,7 +3,7 @@ import { TimeBlock } from '@/components/TimeBlock'
 import { schedules } from '@/const'
 import Head from 'next/head'
 
-export default function Studiants() {
+export default function Schedules() {
 	return (
 		<>
 			<Head>
