@@ -52,12 +52,15 @@ export function FooterLayout(): JSX.Element {
 				{sections.slice(1).map(({ id, section, subsections }) => {
 					return (
 						<li key={id}>
-							<h4 className="block mb-2 font-bold text-xl uppercase">{section}</h4>
+							<span className="block mb-2 font-bold text-xl uppercase">{section}</span>
 							<ul>
 								{subsections.map((subsection) => {
 									return (
 										<li key={subsection.id} className="opacity-70 hover:opacity-100">
-											<Link href="#" className="block py-1.5">
+											<Link
+												href={`${section.toLowerCase()}/${subsection.name.toLowerCase()}`}
+												className="block py-1.5"
+											>
 												{subsection.name}
 											</Link>
 										</li>
@@ -68,10 +71,10 @@ export function FooterLayout(): JSX.Element {
 					)
 				})}
 			</ul>
-			<h5 className="text-center">
+			<span className="text-center">
 				Escuela de Educación Técnico Nº 477, Av. San Martín 3575, San Lorenzo, Santa Fe, República
 				Argentina. Teléfono (+54) 03476-422231
-			</h5>
+			</span>
 		</footer>
 	)
 }
