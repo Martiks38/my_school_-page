@@ -20,8 +20,8 @@ export function HeaderLayout() {
 						{sections.map(({ id, section }) => {
 							return (
 								<li key={id}>
-									{section.match(/^Inicio|Estudiantil$/) ? (
-										<Link href={section === 'Estudiantil' ? '/estudiantil' : '/'}>{section}</Link>
+									{section.match(/^Inicio$/) ? (
+										<Link href="/">Inicio</Link>
 									) : (
 										<span>{section}</span>
 									)}

@@ -258,24 +258,21 @@ export const sections = [
 	{
 		id: 'abaf',
 		section: 'Institucional',
-		subsections: [{ id: '70bf', name: 'Historia' }]
+		subsections: [{ id: '70bf', name: 'Historia', path: 'historia' }]
 	},
 	{
 		id: 'e19a',
 		section: 'Tecnicaturas',
 		subsections: [
-			{ id: '7cee', name: 'Tecnicatura en Electromecánica' },
-			{ id: '2602', name: 'Tecnicatura en Electrónica' },
-			{ id: '20ff', name: 'Tecnicatura en Energías Renovables' }
+			{ id: '7cee', name: 'Tecnicatura en Electromecánica', path: 'electromecanica' },
+			{ id: '2602', name: 'Tecnicatura en Electrónica', path: 'electronica' },
+			{ id: '20ff', name: 'Tecnicatura en Energías Renovables', path: 'renovables' }
 		]
 	},
 	{
 		id: 'f2b4',
 		section: 'Estudiantil',
-		subsections: [
-			{ id: '3d76', name: 'Cuadernillo de ingreso' },
-			{ id: 'ca3a', name: 'Horarios de cursado' }
-		]
+		subsections: [{ id: 'ca3a', name: 'Horarios de cursado', path: 'horarios' }]
 	}
 ]
 

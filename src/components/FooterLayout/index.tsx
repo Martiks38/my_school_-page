@@ -58,7 +58,7 @@ export function FooterLayout(): JSX.Element {
 									return (
 										<li key={subsection.id} className="opacity-70 hover:opacity-100">
 											<Link
-												href={`${section.toLowerCase()}/${subsection.name.toLowerCase()}`}
+												href={`/${section.toLowerCase()}/${subsection.path}`}
 												className="block py-1.5"
 											>
 												{subsection.name}
