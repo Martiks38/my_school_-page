@@ -2,6 +2,7 @@ import { describe, expect, it, vi } from 'vitest'
 import { render } from '@testing-library/react'
 import matchers from '@testing-library/jest-dom/matchers'
 import Novedad from '../[title]'
+
 expect.extend(matchers)
 
 const useRouter = vi.spyOn(require('next/router'), 'useRouter')

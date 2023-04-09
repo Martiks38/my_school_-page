@@ -1,7 +1,7 @@
-import { LayoutPage } from '@/Layout/LayoutPage'
 import Head from 'next/head'
-import { schoolHistory } from '@/const'
 import Image from 'next/image'
+import { LayoutPage } from '@/Layout/LayoutPage'
+import { schoolHistory } from '@/const'
 import SchoolImage from '@/assets/images/eighty-year-old-school.webp'
 
 export default function HistoryInstitution() {

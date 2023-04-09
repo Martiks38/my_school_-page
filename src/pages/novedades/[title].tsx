@@ -1,7 +1,7 @@
-import { LayoutPage } from '@/Layout/LayoutPage'
-import { notices } from '@/const'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { LayoutPage } from '@/Layout/LayoutPage'
+import { notices } from '@/const'
 
 export default function Notice() {
 	const router = useRouter()
@@ -54,44 +54,3 @@ export default function Notice() {
 		</>
 	)
 }
-
-/* {
-		date: '20/3/2023',
-		id: '1c3a',
-		title: 'Becas Provinciales 2023',
-		description:
-			'Actualmente se encuentra abierta la incripción a becas provinciales hasta el 13 de abril.',
-		content: {
-			text: "Requisitos",
-			list: {
-				items: [
-					{ id: 1, item: 'Ser alumnos del establecimiento' },
-					{
-						id: 2,
-						item: 'Completar el formulario de becas disponible en la sección de alumnos o en la fotocopiadora del establecimiento'
-					},
-					{
-						id: 3,
-						item: 'Presentar la documentación requerida: –  Declaración jurada de grupo familiar conviviente, copia del recibo sueldo o Certificación negativa de Anses'
-					},
-					{
-						id: 4,
-						item: 'Tener ingresos inferiores a $163.000'
-					},
-					{
-						id: 5,
-						item: 'De tener CBU/CVU consignarlo claramente en el formulario'
-					},
-					{
-						id: 6,
-						item: 'Colocar el número celular y la empresa a la cual pertenece'
-					}
-				],
-				item_link: [2, 3],
-				links: [
-					'https://drive.google.com/file/d/1sio_1VPsCXfejnM8yKS3QBzD5zVNqZ0r/view?usp=sharing',
-					' https://drive.google.com/file/d/1-yd-YHfxk62SSkK_VsowyT_9yZK5CtaB/view?usp=sharing'
-				]
-			}
-		}
-	}, */
