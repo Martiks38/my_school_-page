@@ -7,7 +7,7 @@ Esta web está hecha con fines de aprendizaje. Este proyecto no se hace responsa
 ## TODO
 
 - [ ] Menú desplegable en el header de la página
-- [ ] Hacer secciones de tecnicaturas
+- [X] Hacer secciones de tecnicaturas
 - [ ] Responsive
 
 ## Descripción del proyecto
