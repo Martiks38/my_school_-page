@@ -9,9 +9,11 @@ const useRouter = vi.spyOn(require('next/router'), 'useRouter')
 
 describe('<Novedades />', () => {
 	it('It should show "Novedades Institucionales"', async () => {
-		useRouter.mockImplementation(() => ({
-			query: { title: 'Becas-Provinciales-2023' }
-		}))
+		useRouter.mockImplementation(() => {
+			return {
+				query: { title: 'Becas-Provinciales-2023' }
+			}
+		})
 
 		const { getByText } = render(<Novedad />)
 
