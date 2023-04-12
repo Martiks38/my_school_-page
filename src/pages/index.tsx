@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { InstitutionalNews } from '@components/InstitutionalNews'
 import { LayoutPage } from '@/Layout/LayoutPage'
 
-export default function Home() {
+export default function Home(): JSX.Element {
 	return (
 		<>
 			<Head>

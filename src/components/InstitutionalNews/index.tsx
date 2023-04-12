@@ -3,7 +3,7 @@ import ArrowIcon from '../ArrowIcon'
 import { notices } from '@/const'
 import stylesInstitutionalNews from './Institutional.module.css'
 
-export function InstitutionalNews() {
+export function InstitutionalNews(): JSX.Element {
 	return (
 		<>
 			<h2 className="w-fit">

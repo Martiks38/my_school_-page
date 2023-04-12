@@ -4,7 +4,7 @@ import { sections } from '@/const'
 import stylesHeader from './Header.module.css'
 import { useEffect } from 'react'
 
-export function HeaderLayout() {
+export function HeaderLayout(): JSX.Element {
 	const handlerMenu = () => {
 		const menu = document.querySelector('.navMenu')
 

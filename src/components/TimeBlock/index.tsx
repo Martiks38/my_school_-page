@@ -1,15 +1,11 @@
-type Course = {
-	id: string
-	course: string
-	url: string
-}
+import type { Course } from '@/typings'
 
 interface TimeBlockProps {
 	courses: Course[]
 	year: string
 }
 
-export function TimeBlock({ courses, year }: TimeBlockProps) {
+export function TimeBlock({ courses, year }: TimeBlockProps): JSX.Element {
 	return (
 		<section className="flex flex-col justify-between p-4 border border-[#0005] rounded-lg shadow-[0_2px_2px_rgb(0_0_0_/_12%),_0_2px_4px_rgb(0_0_0_/_16%)]">
 			<h3 className="block h-16 mb-3.5 text-lg font-medium underline underline-offset-1 decoration-2 text-[#010061]">

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -5,25 +6,7 @@ import { LayoutPage } from '@/Layout/LayoutPage'
 import { ListItems } from '@/components/ListItem'
 import { TableSubjects } from '@/components/TableSubjects'
 import { dataTechniques } from '@/const'
-import { useEffect, useState } from 'react'
-
-type TechniqueTypes = 'electronica' | 'electromecanica' | 'renovables'
-
-type ListItem = {
-	id: string
-	item: string
-}[]
-
-type TechnicalSection = {
-	[index in 'Tercer' | 'Cuarto' | 'Quinto' | 'Sexto']: {
-		id: string
-		name: string
-	}[]
-}
-
-type Video = {
-	[index in 'electromecanica' | 'electronica' | 'renovables']: string
-}
+import type { ListItem, TechnicalSection, TechniqueTypes, Video } from '@/typings'
 
 const title = {
 	electromecanica: 'Electromecánica',
@@ -37,7 +20,7 @@ const videos: Video = {
 	electromecanica: 'https://drive.google.com/file/d/1Y55LTJv_rnVo_HUsI7aHWNEc2hwm6aaL/preview'
 }
 
-export default function Techniques() {
+export default function Techniques(): JSX.Element {
 	const [src, setSrc] = useState('')
 	const router = useRouter()
 	const path = router.query.technique as TechniqueTypes

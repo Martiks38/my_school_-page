@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { LayoutPage } from '@/Layout/LayoutPage'
 import { notices } from '@/const'
 
-export default function Notice() {
+export default function Notice(): JSX.Element {
 	const router = useRouter()
 	const noticeTitle = router.query.title
 	const notice = notices.find((notice) => {

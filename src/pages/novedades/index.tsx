@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { LayoutPage } from '@/Layout/LayoutPage'
 import { notices } from '@/const'
 
-export default function Novedades() {
+export default function Novedades(): JSX.Element {
 	return (
 		<>
 			<Head>

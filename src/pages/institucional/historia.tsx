@@ -4,7 +4,7 @@ import { LayoutPage } from '@/Layout/LayoutPage'
 import { schoolHistory } from '@/const'
 import SchoolImage from '@/assets/images/eighty-year-old-school.webp'
 
-export default function HistoryInstitution() {
+export default function HistoryInstitution(): JSX.Element {
 	return (
 		<>
 			<Head>

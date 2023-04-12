@@ -1,11 +1,10 @@
+import type { ListItem } from '@/typings'
+
 interface ListItemsProps {
-	items: {
-		id: string
-		item: string
-	}[]
+	items: ListItem
 }
 
-export function ListItems({ items }: ListItemsProps) {
+export function ListItems({ items }: ListItemsProps): JSX.Element {
 	return (
 		<ul className="mt-2 list-disc list-inside">
 			{items.map(({ id, item }) => {

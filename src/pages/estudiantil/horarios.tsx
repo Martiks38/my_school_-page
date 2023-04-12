@@ -3,7 +3,7 @@ import { LayoutPage } from '@/Layout/LayoutPage'
 import { TimeBlock } from '@/components/TimeBlock'
 import { schedules } from '@/const'
 
-export default function Schedules() {
+export default function Schedules(): JSX.Element {
 	return (
 		<>
 			<Head>

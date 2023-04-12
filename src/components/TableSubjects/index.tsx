@@ -1,17 +1,11 @@
 import React from 'react'
-
-type TechnicalSection = {
-	[index in 'Tercer' | 'Cuarto' | 'Quinto' | 'Sexto']: {
-		id: string
-		name: string
-	}[]
-}
+import type { TechnicalSection } from '@/typings'
 
 interface TableSubjectsProps {
 	sections: TechnicalSection
 }
 
-export function TableSubjects({ sections }: TableSubjectsProps) {
+export function TableSubjects({ sections }: TableSubjectsProps): JSX.Element {
 	return (
 		<table className="max-w-[30rem]">
 			<tbody className="[&>tr:last-child]:border-b-[#000]">
