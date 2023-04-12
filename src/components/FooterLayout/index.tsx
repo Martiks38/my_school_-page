@@ -9,11 +9,11 @@ export function FooterLayout(): JSX.Element {
 				<Image src="/Escudo.webp" alt="EET N°477" width={64} height={64} />
 				<div className="flex gap-8">
 					<a
-						href="#"
+						href="https://www.facebook.com/477CombateSL"
 						target="_blank"
 						rel="norreferer noopener"
 						className="group"
-						title="Ir al perfil de  Facebook"
+						title="Ir al perfil de Facebook"
 					>
 						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 48 48">
 							<path
@@ -25,7 +25,7 @@ export function FooterLayout(): JSX.Element {
 						</svg>
 					</a>
 					<a
-						href="#"
+						href="https://www.instagram.com/eetp477"
 						target="_blank"
 						rel="norreferer noopener"
 						className="group"
@@ -59,7 +59,7 @@ export function FooterLayout(): JSX.Element {
 										<li key={subsection.id} className="opacity-70 hover:opacity-100">
 											<Link
 												href={`/${section.toLowerCase()}/${subsection.path}`}
-												className="block py-3 px-6"
+												className="block py-3 px-6 md:px-0"
 											>
 												{subsection.name}
 											</Link>
