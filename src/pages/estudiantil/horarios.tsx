@@ -14,13 +14,13 @@ export default function Schedules() {
 				<meta property="og:description" content="" />
 			</Head>
 			<LayoutPage>
-				<main className="w-full max-w-primaryContent mx-auto mt-8 p-4 xl:border border-[#0002]">
+				<main className="w-full max-w-primaryContent mx-auto mt-8 py-4 px-8 md:px-4 xl:border border-[#0002]">
 					<h1 className="mb-8 text-4xl font-robotoMono font-bold">Horarios de cursado</h1>
 					<strong className="block mb-5">
 						En los casos en que no figure el horario de curso se irá completando la información
 						progresivamente.
 					</strong>
-					<div className="grid grid-cols-3 gap-10">
+					<div className="grid grid-cols-[repeat(auto-fit,_minmax(17.5rem,22.5rem))] grid-rows-1 auto-rows-fr justify-center gap-10">
 						{schedules.map(({ courses, id, year }) => {
 							return <TimeBlock key={id} courses={courses} year={year} />
 						})}
