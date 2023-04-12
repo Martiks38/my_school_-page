@@ -17,9 +17,8 @@ export function LayoutPage({ children, haveHeroImage = false }: LayoutPageProps)
 				<meta property="og:image" content="./logo192.png" />
 			</Head>
 			<div
-				className={`grid min-h-screen ${
-					haveHeroImage ? stylesModule.gridAreas_withImage : stylesModule.gridAreas
-				}`}
+				className={`grid min-h-screen ${haveHeroImage ? 'gridAreas_withImage' : 'gridAreas'}`}
+				data-testid="layout-page"
 			>
 				<a
 					href="#mainContent"
