@@ -12,8 +12,8 @@ export default function HistoryInstitution() {
 				<meta property="og:title" content="Historia | EET N°477" />
 			</Head>
 			<LayoutPage>
-				<main className="flex flex-row grow w-full max-w-primaryContent mx-auto mt-8 border border-[#0002]">
-					<div className="max-w-[95ch] px-20 py-4 border-r border-[#0005]">
+				<main className="flex flex-row grow w-full max-w-primaryContent mx-auto mt-8 xl:border border-[#0002]">
+					<div className="max-w-[95ch] px-20 py-4 border-r xl:border-[#0005]">
 						<h1 id="inicio" className="mb-10 text-4xl font-robotoMono font-bold">
 							Historia
 						</h1>

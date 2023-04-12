@@ -28,7 +28,7 @@ export default function Home() {
 					className="fixed top-0 -z-10 w-screen h-screen object-cover"
 					priority={true}
 				/>
-				<main className="grow w-full max-w-primaryContent mx-auto  mt-8 p-4 border border-[#0005]">
+				<main className="w-full max-w-primaryContent mx-auto mt-8 p-4 border xl:border-[#0005]">
 					<h1 className="mb-8 text-4xl font-robotoMono font-bold">
 						Escuela de Educación Técnica Profesional N° 477
 					</h1>

@@ -21,7 +21,7 @@ export default function Notice() {
 				<meta property="og:description" content={notice?.description} />
 			</Head>
 			<LayoutPage>
-				<main className="grow w-full max-w-primaryContent mx-auto  mt-8 p-4 border border-[#0005]">
+				<main className="w-full max-w-primaryContent mx-auto mt-8 p-4 border xl:border-[#0005]">
 					<h1 className="mb-8 text-4xl font-robotoMono font-bold">{notice?.title}</h1>
 					<div className="max-w-[80ch]">
 						<blockquote className="mb-6 border-l-4 border-l-[#0003]">
