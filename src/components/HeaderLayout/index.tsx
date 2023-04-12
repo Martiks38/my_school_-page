@@ -55,7 +55,7 @@ export function HeaderLayout() {
 	}, [])
 
 	return (
-		<header className={`sticky top-0 px-10 bg-black z-10 ${stylesHeader.header}`}>
+		<header className={`sticky top-0 px-10 bg-black z-[1] ${stylesHeader.header}`}>
 			<div className="flex justify-between items-center max-w-primaryContent mx-auto">
 				<Link href="/">
 					<Image

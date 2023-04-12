@@ -4,8 +4,8 @@ import { sections } from '../../const'
 
 export function FooterLayout(): JSX.Element {
 	return (
-		<footer className="relative max-w-primaryContent mt-20 mx-auto pt-8 px-20 pb-9 w-full bg-black text-white">
-			<div className="flex justify-between">
+		<footer className="max-w-primaryContent mt-20 mx-auto pt-8 px-20 pb-9 w-full bg-black text-white">
+			<div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
 				<Image src="/Escudo.webp" alt="EET N°477" width={64} height={64} />
 				<div className="flex gap-8">
 					<a
@@ -39,7 +39,7 @@ export function FooterLayout(): JSX.Element {
 							viewBox="2 2 20 20"
 						>
 							<path
-								className="group-hover:fill-[#9c0b32]"
+								className="group-active:fill-[#9c0b32] group-hover:fill-[#9c0b32]"
 								fill="#666b6e"
 								fillRule="evenodd"
 								d="M2 6a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V6Zm4-2a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H6Zm6 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Zm10.5-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
@@ -48,7 +48,7 @@ export function FooterLayout(): JSX.Element {
 					</a>
 				</div>
 			</div>
-			<ul className="flex justify-center gap-12 mt-10 mb-16 font-semibold">
+			<ul className="flex flex-col md:flex-row justify-center gap-4 my-4 md:gap-12 md:mt-10 md:mb-16 font-semibold text-center md:text-left w-fit mx-auto">
 				{sections.slice(1).map(({ id, section, subsections }) => {
 					return (
 						<li key={id}>
@@ -59,7 +59,7 @@ export function FooterLayout(): JSX.Element {
 										<li key={subsection.id} className="opacity-70 hover:opacity-100">
 											<Link
 												href={`/${section.toLowerCase()}/${subsection.path}`}
-												className="block py-1.5"
+												className="block py-3 px-6"
 											>
 												{subsection.name}
 											</Link>
@@ -71,7 +71,7 @@ export function FooterLayout(): JSX.Element {
 					)
 				})}
 			</ul>
-			<span className="text-center">
+			<span className="block text-center">
 				Escuela de Educación Técnico Nº 477, Av. San Martín 3575, San Lorenzo, Santa Fe, República
 				Argentina. Teléfono (+54) 03476-422231
 			</span>
