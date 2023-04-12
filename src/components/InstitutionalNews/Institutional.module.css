@@ -1,0 +1,9 @@
+.description {
+	display: -moz-box;
+	display: -webkit-box;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	width: 100%;
+	overflow: hidden;
+}
