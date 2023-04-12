@@ -41,7 +41,7 @@ export default function Techniques() {
 				<title>{technique} | EET N°477</title>
 			</Head>
 			<LayoutPage>
-				<main className="w-full max-w-primaryContent mx-auto mt-8 p-4 border xl:border-[#0002]">
+				<main className="w-full max-w-primaryContent mx-auto mt-8 p-4 xl:border border-[#0002]">
 					<h1 className="mb-8 text-4xl font-robotoMono font-bold">Tecnicatura en {technique}</h1>
 					<div className="w-fit">
 						<div className="w-[50rem] h-[28.125rem] mb-10">

@@ -12,7 +12,7 @@ export default function Novedades() {
 				<meta property="og:title" content="Novedad | EET N° 477" />
 			</Head>
 			<LayoutPage>
-				<main className="w-full max-w-primaryContent mx-auto mt-8 p-4 border xl:border-[#0005]">
+				<main className="w-full max-w-primaryContent mx-auto mt-8 p-4 xl:border border-[#0005]">
 					<h1 className="mb-8 text-4xl font-robotoMono font-bold">Novedades Institucionales</h1>
 					<table className="w-full border">
 						<tbody>

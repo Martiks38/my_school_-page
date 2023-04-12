@@ -14,7 +14,7 @@ export default function Schedules() {
 				<meta property="og:description" content="" />
 			</Head>
 			<LayoutPage>
-				<main className="w-full max-w-primaryContent mx-auto mt-8 p-4 border xl:border-[#0002]">
+				<main className="w-full max-w-primaryContent mx-auto mt-8 p-4 xl:border border-[#0002]">
 					<h1 className="mb-8 text-4xl font-robotoMono font-bold">Horarios de cursado</h1>
 					<strong className="block mb-5">
 						En los casos en que no figure el horario de curso se irá completando la información
