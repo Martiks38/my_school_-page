@@ -19,15 +19,15 @@ export default function Novedades() {
 							{notices.map(({ date, id, title }, index) => {
 								return (
 									<tr key={id} className={index % 2 === 0 ? 'bg-[#dbdbdb]' : ''}>
-										<td className="px-3 py-1.5 border border-black">
+										<td className="border border-black">
 											<Link
 												href={`/novedades/${title.replaceAll(' ', '-')}`}
-												className="block w-fit hover:underline"
+												className="block w-fit px-3 py-3 hover:underline"
 											>
 												{title}
 											</Link>
 										</td>
-										<td className="w-[11.25rem] px-3 py-1.5 border border-black text-center">
+										<td className="w-[11.25rem] px-3 py-3 border border-black text-center">
 											{date}
 										</td>
 									</tr>
