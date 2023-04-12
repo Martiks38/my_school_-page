@@ -13,7 +13,7 @@ export default function HistoryInstitution() {
 			</Head>
 			<LayoutPage>
 				<main className="flex flex-row grow w-full max-w-primaryContent mx-auto mt-8 xl:border border-[#0002]">
-					<div className="max-w-[95ch] px-20 py-4 border-r xl:border-[#0005]">
+					<div className="max-w-[95ch] px-4 md:px-20 py-4 border-r xl:border-[#0005]">
 						<h1 id="inicio" className="mb-10 text-4xl font-robotoMono font-bold">
 							Historia
 						</h1>
@@ -50,7 +50,7 @@ export default function HistoryInstitution() {
 							className="block max-w-[43.75rem] w-full h-auto mx-auto"
 						/>
 					</div>
-					<div className="px-20 py-4"></div>
+					<div className="hidden lg:block px-20 py-4"></div>
 				</main>
 			</LayoutPage>
 		</>
