@@ -19,3 +19,40 @@ body {
 	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
 		rgb(var(--background-start-rgb));
 }
+
+.navMenu {
+	opacity: 0;
+	top: -7rem;
+	left: 0;
+	z-index: -1;
+	transition-property: opacity, top, left;
+	transition-duration: 300ms;
+	transition-timing-function: linear;
+}
+
+.navMenu.expandedNavMenu {
+	opacity: 1;
+	top: 3.25rem;
+	left: 0;
+}
+
+.expandedSubMenu {
+	height: 100%;
+}
+
+.activeSection {
+	background-color: #9c0b32;
+}
+
+@media (min-width: 64rem) {
+	.navMenu {
+		opacity: 1;
+	}
+}
+
+@media (min-width: 40rem) {
+	.navMenu {
+		top: 3.25rem;
+		left: -4rem;
+	}
+}

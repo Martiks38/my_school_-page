@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { HeaderLayout } from '@components/HeaderLayout'
 import { FooterLayout } from '@components/FooterLayout'
+import stylesModule from './Layout.module.css'
 
 interface LayoutPageProps {
 	haveHeroImage?: boolean
@@ -15,7 +16,11 @@ export function LayoutPage({ children, haveHeroImage = false }: LayoutPageProps)
 				<meta property="og:type" content="website" />
 				<meta property="og:image" content="./logo192.png" />
 			</Head>
-			<div className="flex flex-col min-h-screen">
+			<div
+				className={`grid min-h-screen ${
+					haveHeroImage ? stylesModule.gridAreas_withImage : stylesModule.gridAreas
+				}`}
+			>
 				<a
 					href="#mainContent"
 					className="fixed top-0 block w-full py-2.5 text-center bg-[#010061] opacity-0 -z-10 focus:opacity-100 focus:z-10"
@@ -24,12 +29,8 @@ export function LayoutPage({ children, haveHeroImage = false }: LayoutPageProps)
 					<span className="text-2xl text-white opacity-90">Ir al contenido principal</span>
 				</a>
 				<HeaderLayout />
-				<div className="mt-auto">
-					<div
-						className={
-							haveHeroImage ? `flex flex-col bg-[#ededed] mt-[60vh]` : 'flex flex-col bg-[#ededed]'
-						}
-					>
+				<div className={stylesModule.content}>
+					<div className="flex flex-col bg-[#ededed]">
 						{children}
 						<FooterLayout />
 					</div>

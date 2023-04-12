@@ -1,0 +1,18 @@
+.gridAreas {
+	grid-template-rows: 3.25rem max-content;
+	grid-template-areas:
+		'header'
+		'content';
+}
+
+.gridAreas_withImage {
+	grid-template-rows: 3.25rem 60vh max-content;
+	grid-template-areas:
+		'header'
+		'image'
+		'content';
+}
+
+.content {
+	grid-area: content;
+}
