@@ -245,7 +245,7 @@ export const schedules = [
 			}
 		],
 		id: 'S71d2',
-		year: 'Cuarto, quito y sexto año - Energías Renovables'
+		year: 'Cuarto, quinto y sexto año - Energías Renovables'
 	}
 ]
 
