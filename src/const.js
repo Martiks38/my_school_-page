@@ -301,3 +301,251 @@ export const schoolHistory = {
 		]
 	}
 }
+
+export const dataTechniques = {
+	renovables: {
+		sections: {
+			'Perfil profesional': [
+				{
+					id: 'PR0a9b',
+					item: 'Proyectar y diseñar equipos de energías renovables.'
+				},
+				{
+					id: 'PR59db',
+					item: 'Montar e instalar componentes, equipos e instalaciones de energías renovables.'
+				},
+				{
+					id: 'PRff06',
+					item: 'Controlar y participar en el suministro de los servicios auxiliares.'
+				},
+				{
+					id: 'PRa7f7',
+					item: 'Operar y mantener equipos e instalaciones de energías renovables.'
+				},
+				{
+					id: 'PRc474',
+					item: 'Realizar e interpretar ensayos de materiales para energías renovables.'
+				},
+				{
+					id: 'PR9b1d',
+					item: 'Comercializar, seleccionar, asesorar y generar y/o participar en emprendimientos vinculados con áreas de su profesionalidad.'
+				}
+			],
+			'Incumbencias profesionales': [
+				{ id: 'IR576f', item: 'Industria.' },
+				{ id: 'IRc81c', item: 'Empresas de generación, transporte y distribución de energía.' },
+				{ id: 'IRc0f2', item: 'Empresas de telecomunicaciones.' },
+				{
+					id: 'IR01af',
+					item: 'Empresas de construcción.'
+				},
+				{ id: 'IRa589', item: 'Estudios de arquitectura.' },
+				{ id: 'IR6d80', item: 'Consultoras energéticas.' },
+				{ id: 'IRe7d4', item: 'Consultoras ambientales.' },
+				{ id: 'IRe551', item: 'Cooperativas eléctricas.' },
+				{ id: 'IR04bf', item: 'Establecimientos agropecuarios.' },
+				{ id: 'IRce78', item: 'Profesional independiente.' }
+			],
+			Asignaturas: {
+				Tercer: [
+					{ id: 'ARb5a6', name: 'Estudio de los Recursos Energéticos.' },
+					{ id: 'ARf581', name: 'Representación Gráfica e Interpretación de Planos I.' },
+					{ id: 'AR8b48', name: 'Taller Sección Electricidad.' },
+					{ id: 'AR0215', name: 'Taller Sección Energía Solar Térmica.' }
+				],
+				Cuarto: [
+					{ id: 'AR6170', name: 'Representación Gráfica e Interpretación de Planos II.' },
+					{ id: 'ARf5d2', name: 'Evaluación de los Recursos Energéticos.' },
+					{ id: 'AR5524', name: 'Mecánica Técnica y Transmisión de Movimiento.' },
+					{ id: 'ARc6c2', name: 'Materiales y  sus Propiedades.' },
+					{ id: 'AR9546', name: 'Introducción a los Circuitos Eléctricos.' },
+					{ id: 'ARa570', name: 'Taller Sección Electricidad.' },
+					{ id: 'ARafeb', name: 'Taller Sección Electrónica.' }
+				],
+				Quinto: [
+					{
+						id: 'ARc666',
+						name: 'Termodinámica de los Procesos de Energías Renovables.'
+					},
+					{ id: 'AR8b5d', name: 'Radicaciones Electromagnéticas.' },
+					{ id: 'AR1f0c', name: 'Electrónica.' },
+					{ id: 'ARfbad', name: 'Máquinas y Comandos Eléctricos.' },
+					{ id: 'ARb414', name: 'Taller Mini-Hidráulica.' },
+					{ id: 'AR255f', name: 'Taller Eólico.' },
+					{ id: 'AR4789', name: 'Taller Biomasa.' }
+				],
+				Sexto: [
+					{ id: 'ARee69', name: 'Instalaciones Eléctricas.' },
+					{
+						id: 'AR1b4a',
+						name: 'Proyecto y Diseño de Equipos de Instalaciones de Energías Renovables.'
+					},
+					{ id: 'ARc1ca', name: 'Proyectos Comunitarios de Energías Renovables.' },
+					{ id: 'ARde57', name: 'Mantenimiento y Reparación de Equipos de Energías Renovables.' },
+					{ id: 'ARfd61', name: 'Taller Montaje de Equipos de Energía Renovable.' },
+					{ id: 'AR9669', name: 'Taller Eficiencia Energética y Arquitectura Bioclimática.' },
+					{ id: 'AR21bd', name: 'Prácticas Profesionalizantes – Pasantía.' }
+				]
+			}
+		}
+	},
+	electromecanica: {
+		sections: {
+			'Perfil profesional': [
+				{
+					id: 'PEMf0ac',
+					item: 'Proyectar y montar equipos componentes e instalaciones mecánicas, electromecánicas, de sistemas neumáticos, oleo hidráulicos; circuitos eléctricos y de control de automatismos; herramientas y dispositivos.'
+				},
+				{
+					id: 'PEM1046',
+					item: 'Realizar ensayos de materiales y ensayos eléctricos, mecánicos, electromecánicos.'
+				},
+				{
+					id: 'PEM83f6',
+					item: 'Operar equipos e instalaciones y dispositivos de accionamiento y control de la producción  y máquinas herramientas.'
+				},
+				{
+					id: 'PEM6e20',
+					item: 'Realizar los mantenimientos, predictivo, preventivo, funcional operativo y correctivo de componentes, equipos e instalaciones electromecánicas.'
+				},
+				{
+					id: 'PEM6c72',
+					item: 'Instalar líneas de consumo y distribución de energía eléctrica de baja y media tensión.'
+				}
+			],
+			'Incumbencias profesionales': [
+				{ id: 'IEMc7d9', item: 'Industria en general.' },
+				{ id: 'IEMbbe8', item: 'Empresas de generación, transporte y distribución de energía.' },
+				{ id: 'IEMe977', item: 'Empresas de servicios de montaje y mantenimiento.' },
+				{
+					id: 'IEMeea9',
+					item: 'Laboratorios de Ensayos de Materiales.'
+				},
+				{ id: 'IEMd6c2', item: 'Talleres de mantenimiento electromecánico.' },
+				{
+					id: 'IEMf006',
+					item: 'Sectores de control, suministros,  diseño asistido por computadora.'
+				},
+				{ id: 'IEM3b41', item: 'Profesional independiente.' }
+			],
+			Asignaturas: {
+				Tercer: [
+					{ id: 'AEMe1f8', name: 'Conocimiento de los Materiales.' },
+					{ id: 'AEM3e8e', name: 'Representación Gráfica e Interpretación de Planos I.' },
+					{ id: 'AEM5770', name: 'Taller Sección Electricidad.' },
+					{ id: 'AEMff2d', name: 'Taller Sección Mecánica.' }
+				],
+				Cuarto: [
+					{ id: 'AEMa9b7', name: 'Representación Gráfica e Interpretación de Planos II.' },
+					{ id: 'AEM2121', name: 'Laboratorio de Ensayos de Materiales.' },
+					{ id: 'AEM79b5', name: 'Mecánica Técnica.' },
+					{ id: 'AEM807d', name: 'Introducción a los Circuitos Eléctricos.' },
+					{ id: 'AEM3d3b', name: 'Gestión y Comercialización.' },
+					{ id: 'AEM8642', name: 'Taller Sección Electricidad.' },
+					{ id: 'AEM76b7', name: 'Taller Sección Mecánica.' }
+				],
+				Quinto: [
+					{
+						id: 'AEM85b2',
+						name: 'Termodinámica y Máquinas Térmicas.'
+					},
+					{ id: 'AEM74c7', name: 'Electrónica.' },
+					{ id: 'AEM7c99', name: 'Elementos de Transporte y Transmisión Mecánica.' },
+					{ id: 'AEMe712', name: 'Máquinas y Comandos Eléctricos.' },
+					{ id: 'AEMa811', name: 'Organización Industrial.' },
+					{ id: 'AEMbef5', name: 'Procesos de Fabricación Industrial.' },
+					{ id: 'AEM9ebb', name: 'Taller Automatización.' },
+					{ id: 'AEM01e2', name: 'Taller CNC.' }
+				],
+				Sexto: [
+					{ id: 'AEM5ab5', name: 'Instalaciones Eléctricas.' },
+					{ id: 'AEM740c', name: 'Proyecto y Diseño de Equipos Electromecánicos.' },
+					{ id: 'AEMbb22', name: 'Sistemas de Control y Automatización Industrial.' },
+					{ id: 'AEM07dd', name: 'Mantenimiento y Ensayos de Equipos Electromecánicos.' },
+					{ id: 'AEM16a6', name: 'Economía.' },
+					{ id: 'AEM12f1', name: 'Marco Jurídico.' },
+					{ id: 'AEM2b58', name: 'Taller CNC.' },
+					{ id: 'AEM9c3b', name: 'Taller Montaje.' },
+					{ id: 'AEMcb35', name: 'Prácticas Profesionalizantes – Pasantía' }
+				]
+			}
+		}
+	},
+	electronica: {
+		sections: {
+			'Perfil profesional': [
+				{
+					id: 'PE21e8',
+					item: 'Proyectar componentes y equipos de electrónica analógica y/o digital, con tecnología electrónica estándar y de baja o mediana complejidad. Realizar ensayos y mediciones eléctricas y electrónicas en dispositivos, componentes, equipos e instalaciones con electrónica analógica y/o digital, estándar de baja o mediana complejidad.'
+				},
+				{
+					id: 'PE0876',
+					item: 'Operar componentes, productos y equipos con electrónica analógica y/o digital.'
+				},
+				{
+					id: 'PE09c8',
+					item: 'Realizar los mantenimientos predictivo, preventivo, funcional operativo, y correctivo de componentes, productos y equipos con electrónica analógica y/o digital, estándar de baja o mediana complejidad.'
+				},
+				{
+					id: 'PE6f39',
+					item: 'Montar e instalar productos, dispositivos y componentes electrónicos (electrónica industrial, equipos de Radio Frecuencia, equipos de soporte para telecomunicaciones, sistemas electrónicos para informática y microinformática).'
+				},
+				{ id: 'PEe545', item: 'Instalar productos y equipos.' },
+				{
+					id: 'PEb883',
+					item: 'Realizar la selección, asesoramiento y comercialización de dispositivos, componentes, productos y equipos. Generar emprendimientos.'
+				}
+			],
+			'Incumbencias profesionales': [
+				{ id: 'IEfd08', item: 'Industria electrónica en general.' },
+				{ id: 'IEf4ca', item: 'Distintas fases de los procesos productivos de otras industrias.' },
+				{ id: 'IE5385', item: 'Empresas de telecomunicaciones, radio, televisión y multimedios.' },
+				{
+					id: 'IE1bea',
+					item: 'Empresas de generación, transporte y distribución de energía eléctrica.'
+				},
+				{ id: 'IE3485', item: 'Laboratorios electrónicos de  mantenimiento y reparación.' },
+				{ id: 'IE64dc', item: 'Infraestructura urbana y edificios.' },
+				{ id: 'IE5c2f', item: 'Profesional independiente.' }
+			],
+			Asignaturas: {
+				Tercer: [
+					{ id: 'AE9e8b', name: 'Componentes eléctricos – electrónicos y su tecnología.' },
+					{ id: 'AEc926', name: 'Dibujo y Diseño eléctrico – electrónico.' },
+					{ id: 'AEc65b', name: 'Instrumentos y Herramientas de propósito general.' },
+					{ id: 'AE6d9a', name: 'Taller.' }
+				],
+				Cuarto: [
+					{ id: 'AEe480', name: 'Introducción a la Tecnología Digital.' },
+					{ id: 'AE4677', name: 'Laboratorio de Ensayos y Mediciones.' },
+					{ id: 'AEbbe2', name: 'Electrónica.' },
+					{ id: 'AE69c9', name: 'Circuitos y Redes I.' },
+					{ id: 'AE6fe7', name: 'Taller.' }
+				],
+				Quinto: [
+					{
+						id: 'AE6fbc',
+						name: 'Organización, Gestión, Comercialización de los Emprendimientos Productivos.'
+					},
+					{ id: 'AE7681', name: 'Introducción al Control.' },
+					{ id: 'AE8182', name: 'Telecomunicaciones.' },
+					{ id: 'AEabc5', name: 'Laboratorio de Ensayos y Mediciones II.' },
+					{ id: 'AE6e35', name: 'Circuitos y Redes II.' },
+					{ id: 'AE6c38', name: 'Circuitos y Dispositivos Analógicos.' },
+					{ id: 'AE51ab', name: 'Taller.' }
+				],
+				Sexto: [
+					{ id: 'AEb167', name: 'Marco Jurídico de los Procesos Productivos.' },
+					{ id: 'AEc909', name: 'Economía.' },
+					{ id: 'AE3cbd', name: 'Ambientes, Seguridad e Higiene.' },
+					{ id: 'AEe52c', name: 'Sistemas de Telecomunicaciones.' },
+					{ id: 'AEd52c', name: 'Sistemas Industriales.' },
+					{ id: 'AE3bcd', name: 'Sistemas de Desarrollo.' },
+					{ id: 'AEfd84', name: 'Máquinas Eléctricas.' },
+					{ id: 'AEfee3', name: 'Proyecto y Diseño Electrónico.' },
+					{ id: 'AEdfc1', name: 'Prácticas Profesionalizantes – Pasantía.' }
+				]
+			}
+		}
+	}
+}
