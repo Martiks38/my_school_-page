@@ -35,9 +35,10 @@ describe('<LayoutPage />', () => {
 		expect(screen.getByTestId('layout-page')).toHaveClass('gridAreas_withImage')
 	})
 
-	it('If there is a background image the wrapper must have the class "gridAreas_withImage".', () => {
+	it('If there is a background image the wrapper must have the class "gridAreas".', () => {
 		renderComponent()
 
 		expect(screen.getByTestId('layout-page')).not.toHaveClass('gridAreas_withImage')
+		expect(screen.getByTestId('layout-page')).toHaveClass('gridAreas')
 	})
 })

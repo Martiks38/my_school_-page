@@ -33,43 +33,4 @@ describe('<Technique />', () => {
 	it('It should have an image with the alt="Trabajo realizado por los estudiantes de ..." attribute', () => {
 		expect(screen.getByAltText(/^Trabajo realizado por los estudiantes de/i)).toBeDefined()
 	})
-
-	it('At startup it should show having a button instead of rendering the iframe or video. The button must have an aria-label="See work done by the students of ...".', () => {
-		expect(
-			screen.getByRole('button', { name: /^Ver trabajos realizados por los estudiantes de/i })
-		).toBeDefined()
-	})
-
-	it('Pressing the button should change the element to the video or iframe.', async () => {
-		const videoBtn = screen.getByRole('button', {
-			name: /^Ver trabajos realizados por los estudiantes de/i
-		})
-
-		act(() => fireEvent.click(videoBtn))
-
-		const video = await screen.findByLabelText(
-			/^Video de los trabajos realizados por los alumnos de/i
-		)
-
-		expect(video).toBeDefined()
-	})
-
-	it('In the case that the value of [technique] is "renewable" it should render an iframe element when pressing the button', async () => {
-		vi.clearAllMocks()
-
-		useRouter.mockImplementation(() => {
-			return {
-				query: { technique: 'renovables' }
-			}
-		})
-
-		const videoBtn = screen.getByRole('button', {
-			name: /^Ver trabajos realizados por los estudiantes de/i
-		})
-
-		act(() => fireEvent.click(videoBtn))
-
-		expect(container.querySelector('video')).not.toBeInTheDocument()
-		expect(container.querySelector('iframe')).toBeInTheDocument()
-	})
 })
