@@ -12,47 +12,45 @@ export function HeaderLayout(): JSX.Element {
 		menu?.classList.toggle('expandedNavMenu')
 		menuBtnContainer.classList.toggle('activeMenu')
 
-		menuBtnContainer.ariaLabel = menu?.classList.contains('expandedNavMenu')
-			? 'Cerrar menú'
-			: 'Abrir menú'
+		const label = menu?.classList.contains('expandedNavMenu') ? 'Cerrar menú' : 'Abrir menú'
+
+		menuBtnContainer.setAttribute('aria-label', label)
 	}
 
 	const handlerSubMenu = (e: React.MouseEvent<HTMLElement>) => {
+		if (window.innerWidth >= 1024) return
+
 		const target = e.currentTarget
 		const subMenu = target.closest('li')?.querySelector('ul')
 		const expanded = document.querySelector('.expandedSubMenu')
 		const activeSection = document.querySelector('.activeSection')
 
-		if (window.innerWidth < 1024) {
-			if (!subMenu?.classList.contains('expandedSubMenu')) {
-				expanded?.classList.remove('expandedSubMenu')
-				activeSection?.classList.remove('activeSection')
-			}
-
-			subMenu?.classList.toggle('expandedSubMenu')
-			target?.classList.toggle('activeSection')
+		if (!subMenu?.classList.contains('expandedSubMenu')) {
+			expanded?.classList.remove('expandedSubMenu')
+			activeSection?.classList.remove('activeSection')
 		}
+
+		subMenu?.classList.toggle('expandedSubMenu')
+		target?.classList.toggle('activeSection')
 	}
 
 	const closeMenu = (changeScreen = false) => {
+		if (window.innerWidth >= 1024 && !changeScreen) return
+
 		const expanded = document.querySelector('.expandedSubMenu')
 		const activeSection = document.querySelector('.activeSection')
 		const navMenu = document.querySelector('.navMenu')
 		const menuBtn = document.querySelector('.menuButton__container')
 
-		if (window.innerWidth < 1024 || changeScreen) {
-			activeSection?.classList.remove('activeSection')
-			expanded?.classList.remove('expandedSubMenu')
-			navMenu?.classList.remove('expandedNavMenu')
-			menuBtn?.classList.remove('activeMenu')
-		}
+		activeSection?.classList.remove('activeSection')
+		expanded?.classList.remove('expandedSubMenu')
+		navMenu?.classList.remove('expandedNavMenu')
+		menuBtn?.classList.remove('activeMenu')
 	}
 
 	useEffect(() => {
 		const closeMenuResize = () => {
-			const width = window.innerWidth
-
-			if (width >= 1020) closeMenu(true)
+			if (window.innerWidth >= 1020) closeMenu(true)
 		}
 
 		window.addEventListener('resize', closeMenuResize)
