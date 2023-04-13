@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
 				/>
 				<main className="w-full max-w-primaryContent mx-auto mt-8 p-4 xl:border border-[#0005]">
 					<h1 className="mb-8 text-4xl font-robotoMono font-bold">
-						Escuela de Educación Técnica Profesional N° 477
+						Escuela de Educación Técnica Profesional N°&nbsp;477
 					</h1>
 					<InstitutionalNews />
 				</main>

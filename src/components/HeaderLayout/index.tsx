@@ -5,10 +5,16 @@ import stylesHeader from './Header.module.css'
 import { useEffect } from 'react'
 
 export function HeaderLayout(): JSX.Element {
-	const handlerMenu = () => {
+	const handlerMenu = (e: React.MouseEvent<HTMLButtonElement>) => {
 		const menu = document.querySelector('.navMenu')
+		const menuBtnContainer = e.currentTarget
 
 		menu?.classList.toggle('expandedNavMenu')
+		menuBtnContainer.classList.toggle('activeMenu')
+
+		menuBtnContainer.ariaLabel = menu?.classList.contains('expandedNavMenu')
+			? 'Cerrar menú'
+			: 'Abrir menú'
 	}
 
 	const handlerSubMenu = (e: React.MouseEvent<HTMLElement>) => {
@@ -32,13 +38,13 @@ export function HeaderLayout(): JSX.Element {
 		const expanded = document.querySelector('.expandedSubMenu')
 		const activeSection = document.querySelector('.activeSection')
 		const navMenu = document.querySelector('.navMenu')
-		const menuBtn = document.querySelector("input[type='checkbox']") as HTMLInputElement
+		const menuBtn = document.querySelector('.menuButton__container')
 
 		if (window.innerWidth < 1024 || changeScreen) {
 			activeSection?.classList.remove('activeSection')
 			expanded?.classList.remove('expandedSubMenu')
 			navMenu?.classList.remove('expandedNavMenu')
-			menuBtn.checked = false
+			menuBtn?.classList.remove('activeMenu')
 		}
 	}
 
@@ -66,21 +72,10 @@ export function HeaderLayout(): JSX.Element {
 						className="w-[3.25rem] h-[3.25rem] p-2 drop-shadow-[0_0_2px_#fffa]"
 					/>
 				</Link>
-				<div aria-live="polite" className="h-[3.25rem]">
-					<div className="flex items-center h-full lg:hidden">
-						<input
-							type="checkbox"
-							id="menuToggle"
-							className={`hidden ${stylesHeader.menuToggle}`}
-						/>
-						<label
-							htmlFor="menuToggle"
-							className={`flex items-center justify-center ${stylesHeader.menuButton__container}`}
-							onClick={handlerMenu}
-						>
-							<div className={stylesHeader.menuButton}></div>
-						</label>
-					</div>
+				<div aria-live="polite" className="flex items-center w-fit h-[3.25rem]">
+					<button aria-label="Abrir menú" className="menuButton__container" onClick={handlerMenu}>
+						<div className="menuButton"></div>
+					</button>
 					<nav className="fixed lg:static h-full bg-[rgba(0,0,0,0.75)] lg:bg-black w-full sm:max-w-md lg:max-w-full backdrop-blur-xl lg:backdrop-blur-none navMenu">
 						<ul className="flex flex-col lg:flex-row h-full py-10 lg:px-4 lg:py-0 text-2xl text-white lg:text-base lg:text-center">
 							{sections.map(({ id, section, subsections }) => {
@@ -89,7 +84,7 @@ export function HeaderLayout(): JSX.Element {
 										{section.match(/^Inicio$/) ? (
 											<Link
 												href="/"
-												className="flex items-center px-10 py-3 h-full lg:group-hover:bg-[#9c0b32] font-semibold"
+												className="flex items-center px-10 py-3 h-full hover:bg-[#9c0b32] font-semibold"
 												onClick={() => closeMenu()}
 											>
 												Inicio
