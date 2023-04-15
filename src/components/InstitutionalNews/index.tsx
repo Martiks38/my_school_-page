@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import ArrowIcon from '../ArrowIcon'
-import { notices } from '@/const'
 import stylesInstitutionalNews from './Institutional.module.css'
+import type { NewsData } from '@/typings'
 
-export function InstitutionalNews(): JSX.Element {
+export function InstitutionalNews({ news }: { news: NewsData[] }): JSX.Element {
 	return (
 		<>
 			<h2 className="w-fit">
@@ -17,11 +17,11 @@ export function InstitutionalNews(): JSX.Element {
 				</Link>
 			</h2>
 			<section className="grid grid-cols-[repeat(auto-fill,_minmax(20rem,22.5rem))] grid-rows-1 auto-rows-fr justify-center gap-4 mt-10">
-				{notices.map(({ description, id, title }) => {
+				{news.slice(0, 3).map(({ description, id, slug, title }) => {
 					return (
 						<Link
 							key={id}
-							href={`/novedades/${title.replaceAll(' ', '-')}`}
+							href={`/novedades/${slug}`}
 							className="grid grid-rows-[min-content_auto_min-content] w-full p-3 border border-[#0002] hover:border-[#000a]"
 						>
 							<h3 className="text-xl font-semibold">{title}</h3>
