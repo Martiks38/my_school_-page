@@ -6,9 +6,11 @@ Esta web está hecha con fines de aprendizaje. Este proyecto no se hace responsa
 
 ## TODO
 
-- [ ] Menú desplegable en el header de la página
-- [X] Hacer secciones de tecnicaturas
-- [ ] Responsive
+- [x] Menú desplegable en el header de la página
+- [x] Hacer secciones de tecnicaturas
+- [x] Responsive
+- [ ] Cambiar la generación de páginas
+- [ ] Modificar los tests a los cambios de las páginas
 
 ## Descripción del proyecto
 
