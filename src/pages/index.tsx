@@ -2,8 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { InstitutionalNews } from '@components/InstitutionalNews'
 import { LayoutPage } from '@/Layout/LayoutPage'
+import { getAllNews } from '@/utils/news'
+import type { NewsData } from '@/typings'
 
-export default function Home(): JSX.Element {
+interface HomeProps {
+	news: string | NewsData[]
+}
+
+export default function Home({ news }: HomeProps): JSX.Element {
 	return (
 		<>
 			<Head>
@@ -12,7 +18,6 @@ export default function Home(): JSX.Element {
 					name="description"
 					content='Escuela de Educación Técnico Profesional N°477 "Combate de San Lorenzo". Avenida San Martín 3575, San Lorenzo, Santa Fe, Argentina. Ofrece títulos en: Técnico Electromecánico, Técnico Electrónico y Técnico en Energías Renovables.'
 				/>
-
 				<meta property="og:title" content="Home | EETP N° 477" />
 				<meta
 					property="og:description"
@@ -32,9 +37,21 @@ export default function Home(): JSX.Element {
 					<h1 className="mb-8 text-4xl font-robotoMono font-bold">
 						Escuela de Educación Técnica Profesional N°&nbsp;477
 					</h1>
-					<InstitutionalNews />
+					{Array.isArray(news) ? (
+						<InstitutionalNews news={news} />
+					) : (
+						<p className="min-h-[14rem] text-2xl">{news}</p>
+					)}
 				</main>
 			</LayoutPage>
 		</>
 	)
+}
+
+export async function getStaticProps() {
+	const news = getAllNews()
+
+	return {
+		props: { news }
+	}
 }

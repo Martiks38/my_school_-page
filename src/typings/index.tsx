@@ -1,6 +1,6 @@
 export type Course = {
-	id: string
 	course: string
+	id: string
 	url: string
 }
 
@@ -20,4 +20,22 @@ export type TechnicalSection = {
 
 export type Video = {
 	[index in TechniqueTypes]: string
+}
+
+export interface News {
+	description: string
+	id: string
+	publishedAt: string
+	title: string
+}
+
+export interface NewsData extends News {
+	slug: string
+}
+
+export type Article = {
+	body: string
+	description: string
+	publishedAt: string
+	title: string
 }
