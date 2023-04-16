@@ -1,22 +1,52 @@
-import { describe, expect, it, vi } from 'vitest'
-import { render } from '@testing-library/react'
+import { afterEach, beforeEach, describe, expect, it } from 'vitest'
+import { cleanup, render, screen } from '@testing-library/react'
 import matchers from '@testing-library/jest-dom/matchers'
-import Novedad from '../[title]'
+import Novedad, { getStaticPaths, getStaticProps } from '../[title]'
+import { NOTICE } from '@/__mocks__/notice'
 
 expect.extend(matchers)
 
-const useRouter = vi.spyOn(require('next/router'), 'useRouter')
-
 describe('<Novedades />', () => {
+	beforeEach(() => {
+		render(<Novedad notice={NOTICE} />)
+	})
+
+	afterEach(() => {
+		cleanup()
+	})
+
 	it('It should show "Novedades Institucionales"', async () => {
-		useRouter.mockImplementation(() => {
-			return {
-				query: { title: 'Becas-Provinciales-2023' }
-			}
+		const pageHeading = screen.getByRole('heading', { level: 1, name: NOTICE.title })
+
+		expect(pageHeading).toBeInTheDocument()
+	})
+
+	it('It should show the description of the novelty.', () => {
+		const descriptionNotice = screen.getByText(NOTICE.description)
+
+		expect(descriptionNotice).toBeInTheDocument()
+	})
+
+	it('Starting from the title value of the route, it returns the news item with its respective information.', async () => {
+		const title = NOTICE.title.replaceAll(' ', '-').toLowerCase()
+		const props = await getStaticProps({
+			params: { title }
 		})
 
-		const { getByText } = render(<Novedad />)
+		expect(props).toEqual({
+			props: {
+				notice: expect.objectContaining({ title: NOTICE.title })
+			}
+		})
+	})
 
-		expect(getByText('Becas Provinciales 2023')).toBeInTheDocument()
+	it('Devuelve un objeto con las rutas de cada noticia.', async () => {
+		const result = await getStaticPaths({})
+		const title = NOTICE.title.replaceAll(' ', '-').toLowerCase()
+
+		expect(result).toEqual({
+			fallback: false,
+			paths: expect.arrayContaining([{ params: { title } }])
+		})
 	})
 })

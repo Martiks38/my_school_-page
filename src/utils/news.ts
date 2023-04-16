@@ -5,7 +5,9 @@ import { remark } from 'remark'
 import html from 'remark-html'
 import type { Article, News, NewsData } from '@/typings'
 
-const newsPath = path.join(process.cwd(), 'src/content/_news')
+const pathFiles = process.env.NODE_ENV === 'test' ? 'src/__mocks__/_news' : 'src/content/_news'
+
+const newsPath = path.join(process.cwd(), pathFiles)
 
 export function getAllNews(): NewsData[] | string {
 	const fileNames = fs.readdirSync(newsPath).filter((filename) => filename.match(/\.mdx?$/))

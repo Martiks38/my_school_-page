@@ -1,10 +1,10 @@
+import { useMemo } from 'react'
 import Head from 'next/head'
 import { LayoutPage } from '@/Layout/LayoutPage'
-import { GetStaticPaths, GetStaticProps } from 'next'
 import { getNews, getPathsNews } from '@/utils/news'
-import { ParsedUrlQuery } from 'querystring'
-import { useMemo } from 'react'
-import { Article } from '@/typings'
+import type { GetStaticPaths, GetStaticProps } from 'next'
+import type { ParsedUrlQuery } from 'querystring'
+import type { Article } from '@/typings'
 
 interface ParamsNotice extends ParsedUrlQuery {
 	title: string
