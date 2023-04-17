@@ -10,7 +10,16 @@ interface TechniqueProps {
 }
 
 export default function Techniques({ techniqueData }: TechniqueProps): JSX.Element {
-	const { __html, technique, imageAlt, imageSrc, iframe } = techniqueData
+	const {
+		__html,
+		technique,
+		imageAlt,
+		imageSrc,
+		iframe,
+		profileId,
+		subjectId,
+		responsibilitiesId
+	} = techniqueData
 
 	return (
 		<>
@@ -47,17 +56,17 @@ export default function Techniques({ techniqueData }: TechniqueProps): JSX.Eleme
 							<nav>
 								<ul className="text-lg list-disc list-inside text-[#010061] font-medium">
 									<li>
-										<a href="#perfil_profesional" className="hover:underline">
+										<a href={profileId} className="hover:underline">
 											Perfil profesional
 										</a>
 									</li>
 									<li>
-										<a href="#incumbencias_profesionales" className="hover:underline">
+										<a href={responsibilitiesId} className="hover:underline">
 											Incumbencias profesionales
 										</a>
 									</li>
 									<li>
-										<a href="#asignaturas" className="hover:underline">
+										<a href={subjectId} className="hover:underline">
 											Asignaturas
 										</a>
 									</li>

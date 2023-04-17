@@ -13,6 +13,9 @@ export interface Technique {
 	imageSrc: string
 	imageAlt: string
 	iframe: string
+	profileId: string
+	responsibilitiesId: string
+	subjectId: string
 }
 
 export interface TechniqueData extends Technique {

@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 import remarkGfm from 'remark-gfm'
+import { remarkHeadingId } from 'remark-custom-heading-id'
 import type { Technique, TechniqueData } from '@/typings'
 
 const pathFiles =
@@ -16,7 +17,9 @@ export async function getTechnique(filename: string): Promise<TechniqueData> {
 
 	const content = fs.readFileSync(filePath, 'utf8')
 	const matterResult = matter(content)
-	const __html = (await remark().use(remarkGfm).use(html).process(matterResult.content)).toString()
+	const __html = (
+		await remark().use(remarkHeadingId).use(remarkGfm).use(html).process(matterResult.content)
+	).toString()
 
 	return { __html, ...(matterResult.data as Technique) }
 }
