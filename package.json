@@ -28,6 +28,7 @@
     "remark-custom-heading-id": "1.0.1",
     "remark-gfm": "3.0.1",
     "remark-html": "15.0.2",
+    "remark-stringify": "10.0.2",
     "typescript": "5.0.2"
   },
   "devDependencies": {
