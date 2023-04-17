@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { sections } from '@/const'
+import { nav } from '@/content/nav'
 import stylesHeader from './Header.module.css'
 import { useEffect } from 'react'
 
@@ -76,7 +76,7 @@ export function HeaderLayout(): JSX.Element {
 					</button>
 					<nav className="fixed lg:static h-full bg-[rgba(0,0,0,0.75)] lg:bg-black w-full sm:max-w-md lg:max-w-full backdrop-blur-xl lg:backdrop-blur-none navMenu">
 						<ul className="flex flex-col lg:flex-row h-full py-10 lg:px-4 lg:py-0 text-2xl text-white lg:text-base lg:text-center">
-							{sections.map(({ id, section, subsections }) => {
+							{nav.map(({ id, section, subsections }) => {
 								return (
 									<li key={id} className="group relative lg:h-full">
 										{section.match(/^Inicio$/) ? (

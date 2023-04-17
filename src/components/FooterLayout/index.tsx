@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { sections } from '../../const'
+import { nav } from '@/content/nav'
 
 export function FooterLayout(): JSX.Element {
 	return (
@@ -49,7 +49,7 @@ export function FooterLayout(): JSX.Element {
 				</div>
 			</div>
 			<ul className="flex flex-col md:flex-row justify-center gap-4 my-4 md:gap-12 md:mt-10 md:mb-16 font-semibold text-center md:text-left w-fit mx-auto">
-				{sections.slice(1).map(({ id, section, subsections }) => {
+				{nav.slice(1).map(({ id, section, subsections }) => {
 					return (
 						<li key={id}>
 							<span className="block mb-2 font-bold text-xl uppercase">{section}</span>

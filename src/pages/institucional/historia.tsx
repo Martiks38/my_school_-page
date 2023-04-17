@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { LayoutPage } from '@/Layout/LayoutPage'
-import { schoolHistory } from '@/const'
+import { schoolHistory } from '@/content/schoolHistory'
 import SchoolImage from '@/assets/images/eighty-year-old-school.webp'
 
 export default function HistoryInstitution(): JSX.Element {

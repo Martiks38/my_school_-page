@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { LayoutPage } from '@/Layout/LayoutPage'
 import { TimeBlock } from '@/components/TimeBlock'
-import { schedules } from '@/const'
+import { schedules } from '@/content/schedules'
 
 export default function Schedules(): JSX.Element {
 	return (
