@@ -1,25 +1,22 @@
-export type Course = {
-	course: string
-	id: string
-	url: string
+import { ParsedUrlQuery } from 'querystring'
+
+export interface ParamsNotice extends ParsedUrlQuery {
+	title: string
 }
 
-export type TechniqueTypes = 'electronica' | 'electromecanica' | 'renovables'
-
-export type ListItem = {
-	id: string
-	item: string
-}[]
-
-export type TechnicalSection = {
-	[index in 'Tercer' | 'Cuarto' | 'Quinto' | 'Sexto']: {
-		id: string
-		name: string
-	}[]
+export interface ParamsTechniques extends ParsedUrlQuery {
+	technique: string
 }
 
-export type Video = {
-	[index in TechniqueTypes]: string
+export interface Technique {
+	technique: string
+	imageSrc: string
+	imageAlt: string
+	iframe: string
+}
+
+export interface TechniqueData extends Technique {
+	__html: string
 }
 
 export interface News {
@@ -38,4 +35,10 @@ export type Article = {
 	description: string
 	publishedAt: string
 	title: string
+}
+
+export type Course = {
+	course: string
+	id: string
+	url: string
 }

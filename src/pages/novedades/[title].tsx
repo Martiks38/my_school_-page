@@ -3,12 +3,7 @@ import Head from 'next/head'
 import { LayoutPage } from '@/Layout/LayoutPage'
 import { getNews, getPathsNews } from '@/utils/news'
 import type { GetStaticPaths, GetStaticProps } from 'next'
-import type { ParsedUrlQuery } from 'querystring'
-import type { Article } from '@/typings'
-
-interface ParamsNotice extends ParsedUrlQuery {
-	title: string
-}
+import type { Article, ParamsNotice } from '@/typings'
 
 interface NoticeProps {
 	notice: Article
