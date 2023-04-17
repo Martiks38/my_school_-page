@@ -54,26 +54,29 @@ export default function Techniques({ techniqueData }: TechniqueProps): JSX.Eleme
 						<section className="my-10">
 							<h3 className="mb-3 text-xl font-lg">¿Qué información vas a encontrar acá?</h3>
 							<nav>
-								<ul className="text-lg list-disc list-inside text-[#010061] font-medium">
+								<ul className="text-lg list-disc list-inside font-medium">
 									<li>
-										<a href={profileId} className="hover:underline">
+										<a href={profileId} className="text-[#010061] hover:underline">
 											Perfil profesional
 										</a>
 									</li>
 									<li>
-										<a href={responsibilitiesId} className="hover:underline">
+										<a href={responsibilitiesId} className="text-[#010061] hover:underline">
 											Incumbencias profesionales
 										</a>
 									</li>
 									<li>
-										<a href={subjectId} className="hover:underline">
+										<a href={subjectId} className="text-[#010061] hover:underline">
 											Asignaturas
 										</a>
 									</li>
 								</ul>
 							</nav>
 						</section>
-						<div dangerouslySetInnerHTML={{ __html }}></div>
+						<div
+							dangerouslySetInnerHTML={{ __html }}
+							className="[&>h2]:text-2xl [&>h2]:mb-3 [&>h2_+_p]:mb-2.5 [&>ul]:list-disc [&>ul]:list-inside [&>ul_li]:mb-1.5 [&>ul]:mb-6 [&>table]:max-w-[30rem] [&>table]:w-full [&>table_th]:bg-[#9c0b32] [&>table_:is(thead,_tbody)>tr]:bg-[#0003] [&>table_tbody_tr]:border-2 [&>table_tbody_tr]:border-x-black [&>table_tbody_tr]:border-y-[#0003] [&>table_tbody_td]:px-6 [&>table_tbody_td]:py-2.5 [&>table_thead_th]:text-lg [&>table_thead_th]:text-white [&>table_thead_th]:border-black [&>table_thead_th]:border-2 [&>table_thead_th]:py-4 [&>table_tbody_tr:last-child]:border-b-0 [&>table:last-child]:border-b-2 [&>table:last-child]:border-b-black"
+						></div>
 					</div>
 				</main>
 			</LayoutPage>
