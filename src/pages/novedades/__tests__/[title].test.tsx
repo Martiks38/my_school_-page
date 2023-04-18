@@ -40,7 +40,7 @@ describe('<Novedades />', () => {
 		})
 	})
 
-	it('Devuelve un objeto con las rutas de cada noticia.', async () => {
+	it('Returns an object with the routes of each news item.', async () => {
 		const result = await getStaticPaths({})
 		const title = NOTICE.title.replaceAll(' ', '-').toLowerCase()
 
