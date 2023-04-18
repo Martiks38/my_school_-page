@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import matchers from '@testing-library/jest-dom/matchers'
-import Novedades from '../index'
+import Novedades, { getStaticProps } from '../index'
 import { NEWS } from '@/__mocks__/news'
 import { getAllNews } from '@/utils/news'
 import { NewsData } from '@/typings'
@@ -29,5 +29,15 @@ describe('<Novedades />', () => {
 		const link = screen.getByRole('link', { name: news[0].title })
 
 		expect(link).toBeInTheDocument()
+	})
+
+	it('The props should return the same as the saved ones.', async () => {
+		const result = await getStaticProps()
+
+		expect(result).toEqual({
+			props: {
+				news: expect.arrayContaining(NEWS)
+			}
+		})
 	})
 })
