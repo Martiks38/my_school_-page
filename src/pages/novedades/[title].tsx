@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import Head from 'next/head'
 import { LayoutPage } from '@/Layout/LayoutPage'
-import { getNews, getPathsNews } from '@/utils/news'
+import { getNews, getPathsNews } from '@/lib/news'
 import type { GetStaticPaths, GetStaticProps } from 'next'
 import type { Article, ParamsNotice } from '@/typings'
 

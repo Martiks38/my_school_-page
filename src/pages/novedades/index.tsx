@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { LayoutPage } from '@/Layout/LayoutPage'
-import { getAllNews } from '@/utils/news'
+import { getAllNews } from '@/lib/news'
 import { NewsData } from '@/typings'
 
 interface NovedadesProps {

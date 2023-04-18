@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { InstitutionalNews } from '@components/InstitutionalNews'
 import { LayoutPage } from '@/Layout/LayoutPage'
-import { getAllNews } from '@/utils/news'
+import { getAllNews } from '@/lib/news'
 import type { NewsData } from '@/typings'
 
 interface HomeProps {

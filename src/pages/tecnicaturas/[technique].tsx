@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { LayoutPage } from '@/Layout/LayoutPage'
-import { getPathsTechnique, getTechnique } from '@/utils/techniques'
+import { getPathsTechnique, getTechnique } from '@/lib/techniques'
 import type { GetStaticPaths, GetStaticProps } from 'next'
 import type { ParamsTechniques, TechniqueData } from '@/typings'
 
