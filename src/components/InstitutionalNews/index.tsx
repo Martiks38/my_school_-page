@@ -16,7 +16,7 @@ export function InstitutionalNews({ news }: { news: NewsData[] }): JSX.Element {
 					</span>
 				</Link>
 			</h2>
-			<section className="grid grid-cols-[repeat(auto-fill,_minmax(20rem,22.5rem))] grid-rows-1 auto-rows-fr justify-center gap-4 mt-10">
+			<section className="grid grid-cols-[repeat(auto-fill,_minmax(20rem,22.5rem))] grid-rows-1 auto-rows-fr place-content-center lg:place-content-start gap-4 mt-10">
 				{news.slice(0, 3).map(({ description, id, slug, title }) => {
 					return (
 						<Link

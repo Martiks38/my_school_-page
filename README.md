@@ -9,8 +9,9 @@ Esta web está hecha con fines de aprendizaje. Este proyecto no se hace responsa
 - [x] Menú desplegable en el header de la página
 - [x] Hacer secciones de tecnicaturas
 - [x] Responsive
-- [ ] Cambiar la generación de páginas
-- [ ] Modificar los tests a los cambios de las páginas
+- [x] Cambiar la generación de páginas
+- [x] Modificar los tests a los cambios de las páginas
+- [ ] Añadir página 404
 
 ## Descripción del proyecto
 
