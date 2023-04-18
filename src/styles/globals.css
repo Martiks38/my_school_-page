@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--max-width: 75rem;
+	--font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
+		'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
+		'Courier New', monospace;
+}
+
+html,
+body {
+	width: 100%;
+	background-color: #ededed;
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+		rgb(var(--background-start-rgb));
+}
+
+.navMenu {
+	opacity: 0;
+	top: -7rem;
+	left: 0;
+	visibility: hidden;
+	transition-property: opacity, top, left;
+	transition-duration: 300ms;
+	transition-timing-function: linear;
+}
+
+.navMenu.expandedNavMenu {
+	opacity: 1;
+	top: 3.25rem;
+	left: 0;
+	visibility: visible;
+}
+
+.expandedSubMenu {
+	height: 100%;
+}
+
+.activeSection {
+	background-color: #9c0b32;
+}
+
+.gridAreas {
+	grid-template-rows: 3.25rem 1fr;
+	grid-template-areas:
+		'header'
+		'content';
+}
+
+.gridAreas_withImage {
+	grid-template-rows: 3.25rem 60vh max-content;
+	grid-template-areas:
+		'header'
+		'image'
+		'content';
+}
+
+@media (min-width: 64rem) {
+	.navMenu {
+		opacity: 1;
+		visibility: visible;
+		z-index: auto;
+	}
+}
+
+@media (min-width: 40rem) {
+	.navMenu {
+		top: 3.25rem;
+		left: -4rem;
+	}
+}
