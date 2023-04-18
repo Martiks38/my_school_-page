@@ -1,18 +1,5 @@
 # Escuela de Enseñanza Técnica N°477 🏫
 
-Esta web está hecha con fines de aprendizaje. Este proyecto no se hace responsable del uso que se pueda hacer del mismo.
-
-`Actualmente en desarrollo`
-
-## TODO
-
-- [x] Menú desplegable en el header de la página
-- [x] Hacer secciones de tecnicaturas
-- [x] Responsive
-- [x] Cambiar la generación de páginas
-- [x] Modificar los tests a los cambios de las páginas
-- [ ] Añadir página 404
-
 ## Descripción del proyecto
 
 Este proyecto surge como idea de rediseñar la página oficial escuela secundaria [EET N° 477](https://escuelatecnica477.com).
