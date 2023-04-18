@@ -52,6 +52,12 @@
 	transform: rotate(405deg);
 }
 
+.backgroundMenuExpanded {
+	opacity: 1;
+	visibility: visible;
+	z-index: 1;
+}
+
 @media (min-width: 64rem) {
 	.menuButton__container {
 		display: none;

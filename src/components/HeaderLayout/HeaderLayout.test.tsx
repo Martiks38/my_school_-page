@@ -32,11 +32,13 @@ describe('<HeaderLayout />', () => {
 	it('Pressing the menu button should add the expandedNavMenu class to the navMenu.', () => {
 		const menuBtn = screen.getByLabelText('Abrir menú')
 		const menu = Component.querySelector('.navMenu')
+		const backgroundMenu = Component.querySelector('#backgroundMenu')
 
 		expect(menuBtn).toBeDefined()
 
 		fireEvent.click(menuBtn)
 		expect(menu).toHaveClass('expandedNavMenu')
+		expect(backgroundMenu).toHaveClass('backgroundMenuExpanded')
 	})
 
 	describe('window.innerWidth >= 1024, ...', () => {
@@ -51,12 +53,14 @@ describe('<HeaderLayout />', () => {
 			const section = screen.getByText('Tecnicaturas')
 			const subMenu = section.closest('li')?.querySelector('ul') as HTMLElement
 			const subSections = subMenu.querySelectorAll('li a')
+			const backgroundMenu = Component.querySelector('#backgroundMenu')
 
 			fireEvent.click(subSections.item(0))
 
 			expect(menu).not.toHaveClass('expanedNavMenu')
 			expect(section).not.toHaveClass('activeSection')
 			expect(subMenu).not.toHaveClass('expandedSubMenu')
+			expect(backgroundMenu).not.toHaveClass('backgroundMenuExpanded')
 		})
 	})
 

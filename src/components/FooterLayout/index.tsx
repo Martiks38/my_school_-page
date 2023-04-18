@@ -56,10 +56,10 @@ export function FooterLayout(): JSX.Element {
 							<ul>
 								{subsections.map((subsection) => {
 									return (
-										<li key={subsection.id} className="opacity-70 hover:opacity-100">
+										<li key={subsection.id}>
 											<Link
 												href={`/${section.toLowerCase()}/${subsection.path}`}
-												className="block py-3 px-6 md:px-0"
+												className="block py-3 px-6 md:px-0 opacity-70 hover:opacity-100"
 											>
 												{subsection.name}
 											</Link>
