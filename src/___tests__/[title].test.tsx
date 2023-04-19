@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { cleanup, render, screen } from '@testing-library/react'
 import matchers from '@testing-library/jest-dom/matchers'
-import Novedad, { getStaticPaths, getStaticProps } from '../[title]'
+import Novedad, { getStaticPaths, getStaticProps } from '@/pages/novedades/[title]'
 import { NOTICE } from '@/__mocks__/notice'
 
 expect.extend(matchers)

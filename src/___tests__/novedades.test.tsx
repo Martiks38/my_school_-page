@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import matchers from '@testing-library/jest-dom/matchers'
-import Novedades, { getStaticProps } from '../index'
+import Novedades, { getStaticProps } from '@/pages/novedades/index'
 import { NEWS } from '@/__mocks__/news'
 import { getAllNews } from '@/lib/news'
 import { NewsData } from '@/typings'

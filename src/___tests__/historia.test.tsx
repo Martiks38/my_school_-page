@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import matchers from '@testing-library/jest-dom/matchers'
-import HistoryInstitution from './historia'
+import HistoryInstitution from '@/pages/institucional/historia'
 
 expect.extend(matchers)
 

@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { cleanup, render, screen } from '@testing-library/react'
 import matchers from '@testing-library/jest-dom/matchers'
-import Technique, { getStaticPaths, getStaticProps } from './[technique]'
+import Technique, { getStaticPaths, getStaticProps } from '@/pages/tecnicaturas/[technique]'
 import { techniqueMock } from '@/__mocks__/techniques'
 
 expect.extend(matchers)

@@ -11,8 +11,8 @@ export default defineConfig({
 		environment: 'jsdom',
 		coverage: { provider: 'c8' },
 		alias: {
-			'@': resolve('./src'),
-			'@components': resolve('./src/components')
+			'@': resolve('src'),
+			'@components': resolve('src/components')
 		}
 	}
 })
